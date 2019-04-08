@@ -1,0 +1,31 @@
+.animat_box{
+	background:green;
+	width:100%;
+	height:500px;
+	perspective: 1000px;
+}
+.animat{
+	background: red;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+	position: relative;
+	top: 100px;
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	line-height: 200px;
+	animation-name: animate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	border-radius:100px;
+}
+@keyframes animate{
+	from{
+		transform:rotateY(0deg);
+	}
+	to{
+		transform:rotateY(360deg);
+	}
+}

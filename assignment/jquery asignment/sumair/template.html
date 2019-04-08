@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wraper">
+   <div class="display"></div>
+   <input type="number"  placeholder="Value1" class="v1">
+   <input type="number"  placeholder="Value2" class="v2">
+   <button id="ml">*</button>
+   <button id="mi">-</button>
+   <button id="pl">+</button>
+   <button id="di">/</button>
+   <button id="reset">c</button>
+</div>      
+<script src="jquery.js"></script>
+<script>
+$('document').ready(function(){
+       
+    $('#ml').click(function(){
+        var a=parseInt($('.v1').val());
+        var b=parseInt($('.v2').val());
+        $('.display').text(a*b);
+    });
+    $('#mi').click(function(){
+        var a=parseInt($('.v1').val());
+        var b=parseInt($('.v2').val());
+        $('.display').text(a-b);
+    });
+    $('#pl').click(function(){
+        var a=parseInt($('.v1').val());
+        var b=parseInt($('.v2').val());
+        $('.display').text(a+b);
+    });
+    $('#di').click(function(){
+        var a=parseInt($('.v1').val());
+        var b=parseInt($('.v2').val());
+        $('.display').text(a/b);
+    });
+    $('#reset').click(function(){
+        $('.v1').val('');
+        $('.v2').val('');
+        $('.display').text('');
+    });
+});
+ 
+    </script>
+
+</body>
+</html>

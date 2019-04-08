@@ -1,0 +1,155 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: sans-serif;
+}
+div{
+	float:left;
+	box-sizing:border-box
+}
+.nav{
+	width: 100%;
+	background: black
+}
+.cont{
+	width:85%;
+	margin:0px auto;
+	float:none;
+}
+.logo{
+	color: white
+}
+.logo div{
+	font-size:20px;
+	float:right;
+	padding:7px;
+	line-height: 30px
+}
+.log{
+	font-size:35px;
+	margin-top: 5px
+}
+li{
+	list-style: none;
+	float: left;
+	padding:15px
+}
+a{
+	text-decoration: none;
+	color: white
+}
+.nav_links{
+	float:right;
+}
+.empty{
+	width: 110%;
+	height: 100px
+}
+.main{
+	background:url(wallpapers/6.jpg);
+	width: 100%;
+	height: 700px;
+	border: 1px solid black;
+	background-size:cover
+}
+.signup{ 
+	background: #0000004d;
+	width: 450px;
+	height:550px;
+	color: white
+}
+.heading{
+	padding: 0px 20px;
+	width: 100%;
+	height: 100px;
+	background:black;
+}
+.hs{
+	padding: 20px 0px
+}
+.ic{
+	float: right;
+	font-size: 60px;
+	padding: 7px 4px;
+	color: grey
+}
+form{
+	padding: 20px
+}
+.f1{
+	width: 410px;
+	height: 50px;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 10px
+}
+.f2{
+	width: 410px;
+	height: 100px;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 10px
+}
+.btn{
+	cursor: pointer;
+	color: white;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 4px;
+	background: #e38f42
+}
+.btn:hover{
+	background: #e38f42ab;
+	transition: 1s;
+}
+p{
+	color: grey;
+}
+.pas{
+	font-size: 15px;
+	margin: 10px;
+}
+.tac{
+	color:#e38f42 
+}
+.register{
+	float: right; 
+	width: 650px;
+	height: 450px;
+	padding: 0px;
+	margin: 0px
+}
+.empt{
+	width: 650px;
+	height: 100px;
+}
+h1{
+	color: white;
+	margin: 20px;
+}
+p{
+	font-size: 18px
+}
+.rg{
+	margin-bottom: 10px
+}
+.btn1{
+	margin-top:20px; 
+	width: 110px;
+	height: 50px;
+	background:#e38f42;
+	color: white;
+	border: none;
+	cursor: pointer
+}
+.btn2{
+	margin-top: 20px;
+	width: 110px;
+	height: 50px;
+	background: #00000066;
+	color: white;
+	border: none;
+	cursor: pointer
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery intro</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		img{width: 200px;height: 200px;}
+		#hide{display:none;}
+		span{
+			background-color: gray;
+			padding: 20px;
+			border-radius: 15px;
+			display: block;
+			width: 150px;
+			text-align: center;
+			margin: 0px auto;
+			color: #fff;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+
+<input type="text" id="test">
+<input type="file" id="img">
+<label for="hide">
+	<span>Select your file</span>
+	<input type="file" id="hide" onchange="$('span').text('done')">
+</label>
+<div class="t"></div>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#test').click(function(){
+			console.log($('#test').val());	
+		});
+		$('#img').change(function(){
+			var img=URL.createObjectURL($('#img')[0].files[0]);
+			$('.t').append('<img src="'+img+'">');
+		});
+		// $('#hide').change(function(){
+		// 	$('span').text('done');
+		// });
+
+	});
+</script>
+</body>
+</html>

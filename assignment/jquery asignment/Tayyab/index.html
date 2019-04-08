@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery intro</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header><input type="text" id="result"></header>
+		<div id="body">
+			<input type="button" value="7" class="btn">
+			<input type="button" value="8" class="btn">
+			<input type="button" value="9" class="btn">
+			<input type="button" value="/" class="btn">
+			<input type="button" value="4" class="btn">
+			<input type="button" value="5" class="btn">
+			<input type="button" value="6" class="btn">
+			<input type="button" value="*" class="btn">
+			<input type="button" value="1" class="btn">
+			<input type="button" value="2" class="btn">
+			<input type="button" value="3" class="btn">
+			<input type="button" value="-" class="btn">
+			<input type="button" value="0" class="btn">
+			<input type="button" value="." class="btn">
+			<input type="button" value="=" id="calculate">
+			<input type="button" value="+" class="btn">
+			<input type="button" value="C" id="clear">
+		</div>
+	</div>
+
+
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(e){
+		$('.btn').click(function (e){
+			$('#result').val($('#result').val() + $(this).val());
+		});
+		$('#clear').click(function (e){
+			$('#result').val('');
+		});
+		$('#calculate').click(function (){
+			$('#result').val(eval($('#result').val()));
+		});
+	});
+</script>
+</body>
+</html>

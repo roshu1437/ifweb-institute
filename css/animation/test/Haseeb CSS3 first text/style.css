@@ -1,0 +1,117 @@
+.main,.second{
+	width: 150px;
+	height: 200px;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+	top: 20px;
+}
+.l,.r{
+	background: orange;
+	width: 10px;
+	height: 200px;
+}
+.l{
+	float: left;
+	position: absolute;
+	left: -10px;
+	animation-name: la;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes la{
+	0%{transform: rotate(0deg);	}
+	20%,60%{transform: rotate(25deg);left: 28px;}
+	79%,100%{transform: rotate(0deg);left: -10px;}
+}
+.r{
+	float: right;
+	position: absolute;
+	right: -10px;
+	animation-name: ra;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes ra{
+	0%{transform: rotate(0deg);}
+	20%,60%{transform: rotate(-25deg);right: 28px;}
+	79%,100%{transform: rotate(0deg);right: -10px;}
+}
+.b{
+	width: 100%;
+	height: 10px;
+	margin: 0px auto;
+	background: orange;
+	position: relative;
+	top: 200px;
+	animation-name: ba;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes ba{
+	0%{top:200px;}
+	20%,60%{top: 100px;width: 98px;}
+	79%,100%{top: 200px;}
+}
+.one{
+	width: 10px;
+	height: 200px;
+	background: orange;
+	position: absolute;
+	left: 20px;
+	top: -200px;
+	animation-name: one;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes one{
+	0%{top:-200px;}
+	20%,60%{top: 0px;}
+	79%,100%{top: -200px;}
+}
+.two{
+	width: 70px;
+	height: 85px;
+	border: 10px solid orange;
+	border-left: none;
+	position: absolute;
+	transform: rotate(-180deg);
+	border-radius: 0px 50px 50px 0px;
+	left: 30px;
+	top:-120px;
+	animation-name: two;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes two{
+	0%{top:-120px;}
+	20%,60%{top: 0px;transform: rotate(0deg);}
+	79%,100%{top: -120px;}
+}
+.three{
+	width: 70px;
+	height: 85px;
+	border: 10px solid orange;
+	border-left: none;
+	transform: rotate(180deg);
+	border-radius: 0px 50px 50px 0px;
+	position: absolute;
+	left: 30px;
+	top: 215px;
+	animation-name: three;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes three{
+	0%{top:215px;}
+	20%,60%{top: 95px;transform: rotate(0deg);}
+	79%,100%{top: 215px;}
+}
+
+

@@ -1,0 +1,16 @@
+.box{
+	width:100px;
+	height:100px;
+	background-color:red;
+	margin: 10px;
+	float: left;
+}
+.t{
+	color: red;
+	font-size: 70px;
+	transition: 0.2s;
+}
+.t:hover{
+	color: blue;
+	transform: rotate(360deg);
+}

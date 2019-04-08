@@ -1,0 +1,214 @@
+*{margin: 0px; padding: 0px; font-family: 'Open Sans', sans-serif; transition: 1s; box-sizing: border-box;}
+body{
+	background: linear-gradient(#fffffff5 30%, #ffffff 100%),url(images/center.jpg);
+	background-size: 100% auto;
+    background-position:left center;
+}
+/*= make some own style's =*/
+.c_gray{color:gray;}
+.pr{position: relative;}
+aj{color:#00ff89d6; font-weight: bold;}
+.w65{
+	width: 65%;
+	text-align: center;
+	margin:0px auto;
+}
+.w80{
+	width: 80%;
+
+	text-align: center;
+	margin:0px auto;
+}
+.clb::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+a{text-decoration: none;}
+a:hover{opacity: 0.8}
+/*=NAVBAR=*/
+.nav{
+	background: #181818;
+	height: 60px;
+	width: 100%;
+	line-height: 60px;
+	font-weight: bold;
+}
+.nav span a{color:#fff}
+.aleft{float: left; left: 20px}
+.aright{float: right; right: 20px}
+.t-bar{margin-right: 5px;}
+/*=HEADER=*/
+.header{
+	background: rgb(245,33,33);
+    background: linear-gradient(90deg, rgba(162,0,0,0.7371323529411764) 0%, rgba(22,18,18,0.8155637254901961) 73%), url(images/top.jpg);
+    background-size: 100% 178%;
+    background-repeat:no-repeat;
+    background-position:left center;
+    margin-top: -2px;
+	height: 600px;
+	width: 100%;
+}
+.header .w65 span,.header .w65 p{
+	color:#fff;
+	top:200px;
+	position: relative;
+	font-size: 70px;
+}
+.header .w65 p{
+	font-size: 22px;
+	opacity: 0.6;
+}
+/*=INNER CONTENT=*/
+.in_cont{
+	background: linear-gradient(#fffffff2 30%, #ffffff 100%),url(images/center.jpg);
+	width: 100%;
+	position: relative;
+	top:100px;
+	bottom: 100px;
+	padding: 20px;
+	color:gray;
+}
+.in_box{
+	background: #fff;
+	width: 300px;
+	float: left;
+	margin: 20px;
+	padding: 20px;
+	box-shadow: 0px 0px 15px -8px rgba(0,0,0,0.49);
+}
+.in_icon{
+	font-size: 80px;
+	color:#c30000;
+	margin: 20px 0px;
+}
+.p-a{margin: 20px 0px;}
+.in_box h3{margin: 15px;}
+.in_box p{line-height: 30px;}
+.b_inner{
+	padding: 0px 20px;
+	text-align: center;
+	position: relative;
+	left: 5%;
+}
+/*=PIC-BIO=*/
+.pic_bio{
+	background-image: url(images/bottom.jpg);
+	background-size: 120% 180%;
+    background-position:center bottom;
+	width: 100%;
+	height: 450px;
+	top:100px;
+}
+.pic_bio .w65 span,.pic_bio .w65 p{
+	font-size: 50px;
+	color:#fff;
+	position: relative;
+	top:180px;
+}
+.pic_bio .w65 p{font-size: 20px;}
+/*=FOOTER=*/
+.footer{
+	background: #181818;
+	color:#fff;
+	width: 100%;
+	padding: 20px;
+	margin:20px 0px;
+	position: relative;
+	top:150px;
+	bottom: 150px;
+}
+.footer *{text-align: left;}
+.f-bio{width: 50%;float: left;	line-height: 35px;}
+.fhead{
+	font-size: 30px;
+	text-transform: uppercase;
+	position: relative;
+	bottom: 20px;
+}
+.f-link{width: 25%; float: left; padding: 10px 20px;}
+.f-social{width: 25%; float: left; padding: 10px 50px;}
+.fhead{font-size: 25px; text-transform: uppercase;}
+hr{border-color: gray;}
+.f_mg{
+	font-size: 18px;
+	line-height: 45px;
+}
+li{list-style: none;}
+ul li a{
+	width: 100%;
+	color:gray;
+	font-size: 20px;
+	line-height: 55px;
+	cursor: pointer;
+}
+.fsi{
+	color:#525252;
+	font-size: 30px;
+	margin-right: 10px;
+}
+.fcopy{
+	position: relative;
+	top:30px;
+	text-align: center;
+}
+.fcopy * {text-align: center;}
+.bline {width: 65%; margin:0px auto;}
+h4{
+	margin:20px 0px;
+	opacity: 0.6
+}
+@media screen and (max-width: 1530px) {
+    .w80{
+    	width: 95%;
+    }
+    .b_inner{
+    	padding: 0px;
+    }
+    .f-bio{
+    	width: 100%;
+    	position: relative;
+    	bottom:30px;
+    }
+    .f-link,.f-social{
+    	width: 50%;
+    }
+    .in_box{
+    	width: 25%;
+    }
+}
+@media (max-width: 1024px){
+	.in_box{
+    	width:40%;
+    	margin:20px;
+    	left: 0px;
+    }
+    .b_inner{
+    	left:0px;
+    	padding: 10px;
+    }
+}
+@media(max-width: 600px){
+	.header .w65 span{
+		font-size: 40px;
+	}
+	.header .w65 p,.p-a{
+		font-size: 16px;
+	}
+	.in_box{
+		width: 100%;
+		margin: 20px 0px;
+		padding:5px;
+	}
+	.b_inner{
+		left: 0px;
+		right:0px;
+		width: 100%;
+	}
+	.b_inner{
+		padding: 2px;
+	}
+	.pic_bio .w65 span{font-size: 30px}
+	.pic_bio .w65 p{font-size: 16px}
+	.f-link,.f-social{width: 100%; margin-top: 10px;}
+}

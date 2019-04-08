@@ -1,0 +1,65 @@
+.animate{
+	width: 200px;
+	height: 200px;
+	background: red;
+	margin: 0px auto;
+	animation-name:move;
+	animation-duration:5s;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	position: relative;
+	top:20px;
+}
+.animate:before{
+  	content: '';
+	background: yellow;
+	width: 100px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	bottom: -10px;
+}
+.animate:after{
+	position: absolute;
+	content:'';
+	background: green;
+	width: 100px;
+	height: 10px;
+	display: block;
+	top: -10px;
+}
+@keyframes move{
+	0%{
+		background:yellow;
+		left: 0px;
+		top: 0px;
+		transform:rotate(0deg);
+	}
+	25%{
+		background:red;
+		left:100px;
+		top:0px;
+		transform:rotate(90deg);
+	}
+	50%{
+		background:green;
+		left: 100px;
+		top:100px;
+		transform:rotate(-90deg);
+		border-radius:100px;
+	}
+	75%{
+		background:gray;
+		top:100px;
+		left: 0px;
+		transform:rotate(110deg);
+	}
+	100%{
+		background:pink;
+		left: 0px;
+		top:0px;
+		transform:rotate(-100deg);
+	}
+	/*to{background:blue}
+	from{background:green}*/
+}

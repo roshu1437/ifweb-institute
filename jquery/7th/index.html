@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery intro</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<span onclick="reset('#test')">Reset</span>
+<input type="text" id="test">
+<span onclick="reset('#t1')">Reset</span>
+<textarea id="v" style="width:500px;height:200px;"></textarea>
+<a href="" target="_blank">test</a>
+<button type="button" class="vc">click</button>
+<span onclick="reset('#t2')">Reset</span>
+<textarea id="t2"></textarea>
+<span onclick="reset('#t3')">Reset</span>
+<textarea id="t3"></textarea>
+<span onclick="reset('#t4')">Reset</span>
+<textarea id="t4"></textarea>
+<input type="file" id="img" onchange="img_show('#img','.s')">
+<label for="hide">
+	<span>Select your file</span>
+	<input type="file" id="hide" onchange="img_show('#hide','.t')">
+</label>
+<div class="t"></div>
+<div class="s"></div>
+<script src="jquery.js"></script>
+<script>
+function img_show(get_img,show_img){
+	console.log(get_img);
+	var img=URL.createObjectURL($(get_img)[0].files[0]);
+	$(show_img).append('<input type="checkbox"><img src="'+img+'">');
+}
+function reset(id){
+	$(id).val('');
+}
+
+	$(document).ready(function(){
+		$('.vc').click(function(){
+			var v=$('#v').val().split('\n');
+			$.each(v,function(i,v){
+				window.open(v, '_blank');
+			});
+			console.log(v);
+			// window.open(v, '_blank');
+		});
+	});
+</script>
+</body>
+</html>

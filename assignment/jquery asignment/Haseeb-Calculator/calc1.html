@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="shortcut icon" type="image/x-icon" href="calc.png">
+</head>
+<body>
+<style>
+*{
+	font-size: 20px;
+}
+.main{
+	width: 400px;
+	height: 320px;
+	border: 2px solid gray;
+	border-radius: 5px;
+	margin: 20px auto;
+	padding: 20px;
+	background: skyblue;
+}
+input{
+	width: 71%;
+	height: 43px;
+	margin: 5px 0px;
+	border-radius: 5px;
+	background: #fff;
+	outline: none;
+}
+.result{
+	text-align: right;
+	padding-right: 10px;
+}
+[type="submit"]{
+	width: 24%;
+	height: 50px;
+	background: #fff;
+}
+.clear{
+	clear: both;
+	margin: 10px auto;
+}
+</style>
+<div class="main">
+	<input type="text" class="result">
+	<input type="submit" value="Clear" class="clear">
+	<input type="submit" value="7" class="btn">
+	<input type="submit" value="8" class="btn">
+	<input type="submit" value="9" class="btn">
+	<input type="submit" value="+" class="btn">
+	<input type="submit" value="4" class="btn">
+	<input type="submit" value="5" class="btn">
+	<input type="submit" value="6" class="btn">
+	<input type="submit" value="-" class="btn">
+	<input type="submit" value="1" class="btn">
+	<input type="submit" value="2" class="btn">
+	<input type="submit" value="3" class="btn">
+	<input type="submit" value="*" class="btn">
+	<input type="submit" value="0" class="btn">
+	<input type="submit" value="." class="btn">
+	<input type="submit" value="=" class="res">
+	<input type="submit" value="/" class="btn">
+</div>
+
+<script src="jQuery.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.btn').click(function () {
+			$('.result').val($('.result').val() + $(this).val());
+		});
+		$('.clear').click(function (argument) {
+			$('.result').val('');
+		});
+		$('.res').click(function (argument) {
+			$('.result').val(eval($('.result').val()));
+		});
+	});
+</script>
+</body>
+</html>

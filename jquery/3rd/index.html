@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery intro</title>
+<style>
+.red{color:red}
+.yellow{color:yellow}
+.font{font-size:60px;}
+</style>
+</head>
+<body>
+<picture>
+	<source srcset="../../img/2.webp" type="image/webp">
+	<source srcset="../../img/3.png" type="image/png">
+	<img src="../../img/3.png" height="900" width="1600">
+</picture>
+<input type="text" id="user" placeholder="Enter user name">
+<input type="password" id="pass" placeholder="Enter user password">
+<h1 class="red font">Its Dummy Text</h1>
+<button type="button" class="tclass">Toggle Class</button>
+<button type="button" class="rclass">Remove class</button>
+<button type="button" class="getv">get value</button>
+<button type="button" class="gett">get text</button>
+<button type="button" class="geth">get html</button>
+<button type="button" class="spass">show password</button>
+<button type="button" class="hpass">hide password</button>
+<script src="jquery.js"></script>
+<script>
+	$('.tclass').click(function(){
+		$('h1').toggleClass('red yellow');
+	});
+	$('.rclass').click(function(){
+		$('h1').removeClass('font');
+	});
+	$('.getv').click(function(){
+		alert($('#user').val());
+	});
+	$('.gett').click(function(){
+		alert($('body').text());
+	});
+	$('.geth').click(function(){
+		alert($('html').html());
+	});
+	$('.spass').click(function(){
+		$('#pass').attr('type','text');
+	});
+	$('.hpass').click(function(){
+		$('#pass').attr('type','password');
+	});
+</script>
+</body>
+</html>

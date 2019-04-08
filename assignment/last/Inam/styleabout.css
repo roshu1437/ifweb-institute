@@ -1,0 +1,328 @@
+div{
+	float:left;}
+.Tnav2{
+	width:100%;
+	height:40px;
+	background:#f9f9f9a3;
+	}
+	.Tnav2 a{
+		position:relative;
+		left:20px;
+		float:left;
+		text-decoration:none;
+		line-height:40px;
+		color:#7c8c89a3;
+		font-size:15px;
+		font-family:fantasy;
+		margin:0px 20px 0px 20px;}
+	.Tnav2 hr{
+		position:relative;
+		left:20px;
+		width:2px;
+		height:20px;
+		float:left;
+		margin:10px 0px 10px 0px;
+		background:#CCC;
+		border:none;
+		}
+		
+.div3{
+	position:relative;
+	top:0px;
+	width:100%;
+	height:750px;
+	}
+	.div31{
+		width:38%;
+		height:650px;}
+	.div3 h2{
+		letter-spacing:5px;
+		font:46px/68px Montserrat,sans-serif;
+		text-align:center;
+		position:relative;
+		top:90px;
+		overflow:hidden;
+		left:0px;
+		color:#000;}
+	.div32{
+		width:24%;
+		height:500px;
+		text-align:center;}
+	.div32 p{
+		position:relative;
+		top:120px;
+		left:200px;
+		margin-left:20px;
+		/*overflow:hidden;*/
+		text-align:left;
+		font:300 18px/28px Roboto, sans-serif;
+		color:#8594a7;
+		}
+	.div33{
+		width:25%;
+		height:500px;
+		text-align:center;
+	}
+	.div33 p{position:relative;top:120px;left:200px; margin-left:20px;
+		/*overflow:hidden;*/
+		text-align:left;
+		padding-left:10px;
+		box-sizing:border-box;
+		font:300 18px/28px Roboto, sans-serif;
+		color:#8594a7;
+		}
+		
+.divsfour{
+	width:100%;
+	height:450px;
+	background:#f8f8f9;}
+	.ib{
+		position:relative;
+		top:50px;
+		left:35%;
+		color:#000;
+		font-size:90px;
+		transition:0.5s;}
+	.divsfourh2{
+		position:relative;
+		top:50px;
+		text-align:center;
+		color:#000;
+		font:26px/37px Montserrat, sans-serif;
+		letter-spacing:3px;
+		margin:20px 0px 20px 0px;
+		transition:0.5s;}
+	.divsfourp{
+		position:relative;
+		left:0px;
+		top:50px;
+		text-align:center;
+		font:300 18px/28px Roboto, sans-serif;
+		color:#8594a7;
+		margin: 0px 15px 0px 16px;
+		transition:0.5s;}
+				.maindiv{
+					opacity:0;
+					position:relative;
+					top:-175px;
+					left:26%;
+					width:40%;
+					height:50px;
+					overflow:hidden;
+					transition:0.2s;
+				}
+					.maindiv a{
+					text-decoration:none;}
+				p{
+					color:#fff;
+					position:relative;
+					top:18px;
+					left:19%;
+					font-size:16px;
+					}
+				.divleft{
+					float:none;
+					position:relative;
+					top:-18px;
+					width:30%;
+					height:50px;
+					border:3px solid #fff;
+					border-right:none;
+					box-sizing:border-box;
+					transition:1s;}
+				.divright{
+					float:right;
+					position:relative;
+					top:-68px;
+					left:0px;
+					width:30%;
+					height:50px;
+					border:3px solid #fff;
+					border-left:none;
+					box-sizing:border-box;
+					transition:1s;}
+				.maindiv:hover .divleft{
+					width:100%;}
+				.maindiv:hover .divright{
+					position:relative;
+					width:100%;}
+			
+.divsfour-sec1{
+	width:25%;
+	height:450px;}
+	.sec1-sec2-sec3-sec4{
+		position:relative;
+		top:0px;
+		width:100%;
+		height:450px;
+		transition:0.5s;}
+.divsfour-sec1:hover .sec1-sec2-sec3-sec4{
+	top:-30px;
+	height:510px;
+	background:#0ca289;
+	color:#FFF;}
+.divsfour-sec1:hover .divsfourp{
+	color:#FFF;}
+.divsfour-sec1:hover .divsfourh2{
+	color:#FFF;}
+.divsfour-sec1:hover .ib{
+	color:#FFF;}
+.divsfour-sec1:hover .maindiv{
+	opacity:1;
+	top:-175px;
+	}
+.divsfour-sec2:hover .maindiv{
+	opacity:1;
+	top:-175px;
+	}
+.divsfour-sec3:hover .maindiv{
+	opacity:1;
+	top:-175px;
+	}
+.divsfour-sec4:hover .maindiv{
+	opacity:1;
+	top:-175px;
+	}
+.divsfour-sec2{
+	width:25%;
+	height:450px;}
+	
+.divsfour-sec2:hover .sec1-sec2-sec3-sec4{
+	top:-30px;
+	height:510px;
+	background:#0ca289;
+	color:#FFF;}
+.divsfour-sec2:hover .divsfourp{
+	color:#FFF;}
+.divsfour-sec2:hover .divsfourh2{
+	color:#FFF;}
+.divsfour-sec2:hover .ib{
+	color:#FFF;}
+	
+.divsfour-sec3{
+	width:25%;
+	height:450px;}
+.divsfour-sec3:hover .sec1-sec2-sec3-sec4{
+	top:-30px;
+	height:510px;
+	background:#0ca289;
+	color:#FFF;}
+.divsfour-sec3:hover .divsfourp{
+	color:#FFF;}
+.divsfour-sec3:hover .divsfourh2{
+	color:#FFF;}
+.divsfour-sec3:hover .ib{
+	color:#FFF;}
+	
+.divsfour-sec4{
+	width:25%;
+	height:450px;}
+.divsfour-sec4:hover .sec1-sec2-sec3-sec4{
+	top:-30px;
+	height:510px;
+	background:#0ca289;
+	color:#FFF;}
+.divsfour-sec4:hover .divsfourp{
+	color:#FFF;}
+.divsfour-sec4:hover .divsfourh2{
+	color:#FFF;}
+.divsfour-sec4:hover .ib{
+	color:#FFF;}
+
+.ourteamdiv{
+	position:relative;
+	top:50px;
+	width:100%;
+	height:600px;
+	background:#FFF;}
+.ourteamdiv h4{
+	font:46px/68px Montserrat, sans-serif;
+	color:#000;
+	letter-spacing:4px;
+	text-align:center;
+	margin-bottom:20px;}
+	.picsourteamdiv{
+		float:none;
+		width:70%;
+		height:500px;
+		margin:0px auto;
+		overflow:hidden;}
+		.sliderourteamdiv{
+			position:relative;
+			width:300%;
+			height:500px;
+			animation-name:sliderourteamdiv;
+			animation-duration:15s;
+			animation-iteration-count:infinite;
+			animation-timing-function:linear;}
+@keyframes sliderourteamdiv{
+	0%,5%{left:0px;}
+	10%{left:0;}
+	20%{left:-33%;}
+	30%{left:-33%;}
+	40%{left:-33%}
+	50%{left:-66%;}
+	60%{left:-66%;}
+	70%{left:-66%;}
+	80%{left:-99%;}
+	90%{left:-99%;}
+	100%{left:-99%;}
+	}
+			.sliderourteamdivpic1{
+				width:10.066%;
+				height:500px;
+				margin:0px 20px 0px 20px;}
+				.sliderourteamdivpic1 h5{
+					font:20px/30px Montserrat, sans-serif;
+					color:#36e4c6;
+					text-align:center;
+					margin:20px 0px 20px 0px;}
+				.sliderourteamdivpic1 p{
+					font:300 18px/28px Roboto, sans-serif;
+					color:#8594a7;
+					text-align:center;
+					left:0px;}
+				.ourteampic1{
+					width:70%;
+					float:none;
+					margin:0px auto;
+					height:220px;
+					border-radius:70%;
+					overflow:hidden;}
+					.ourteampic1 img{
+						width:100%;
+						height:220px;}
+			.sliderourteamdivpic2{
+				position:relative;
+				left:1.5%;
+				width:10%;
+				height:500px;}
+			.sliderourteamdivpic3{
+				position:relative;
+				left:3%;
+				width:10%;
+				height:500px;}
+.goc{
+	position:relative;
+	top:50px;}
+.lastdiv{
+	position:relative;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:200px;
+	background:#FFF;}
+	.lasttext{
+		position:relative;
+		top:40%;
+		left:10%;
+		margin:0px auto;
+		width:20%;
+		}
+	.lastdiv h4{
+		float:left;
+		font:700 20px/30px Montserrat, sans-serif;}
+	c{
+		float:none;
+		color:#8594a7;
+		font-size:14px;}

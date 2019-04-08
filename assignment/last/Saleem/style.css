@@ -1,0 +1,1113 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    float: left;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    box-shadow: 0px 0px 15px #0005;
+}
+
+.logo img {
+    position: relative;
+    top: 27px;
+    left: 36px;
+    float: left;
+    border-right: 1px solid #7c7c7c;
+    padding-right: 20px;
+}
+
+h1 {
+    color: #7c7c7c;
+    font-size: 14px;
+    position: absolute;
+    top: 52px;
+    left: 282px;
+}
+
+nav ul {
+    position: absolute;
+    left: 496px;
+    top: 18px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+nav ul li i {
+    color: #7c7c7c9c;
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-right: 20px;
+    line-height: 70px;
+    font-size: 18px;
+    color: #2b2b35bf;
+    font-weight: bold;
+
+}
+nav ul li a:hover {
+    color: #29dfc4;
+}
+nav ul .search {
+    color: #2b2b35bf;
+    border-left: 1px solid #2b2b35bf;
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    position: relative;
+    left: 370px;
+}
+
+nav ul .search:hover {
+    color: #3be2c6;
+}
+.r {
+    position: relative;
+
+}
+
+.drop {
+    width: 1241px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    display: none;
+    transition: 1s;
+    left: -400px;
+    box-shadow: 0px 0px 15px #0005;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.r:hover .drop {
+    display: block;
+}
+
+.about {
+    float: left;
+}
+
+.about a {
+    border-bottom: 1px solid #2b2b35bf;
+    display: inherit;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #2b2b35bf;
+}
+
+.about h2 {
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.about a:hover {
+    color: #262b33;
+}
+
+
+
+.about-1 {
+    float: left;
+}
+
+.about-1 a {
+    border-bottom: 1px solid #2b2b35bf;
+    display: inherit;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #2b2b35bf;
+}
+
+.about-1 h2 {
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+
+.about-1 a:hover {
+    color: #262b33;
+}
+
+.company {
+    float: left;
+    position: relative;
+    top: -306px;
+    left: 580px;
+}
+
+.company h3 {
+    color: #3be2c6;
+    text-transform: uppercase;
+    font-size: 28px;
+    width: 25%;
+
+}
+
+.company p {
+    width: 25%;
+    position: relative;
+    top: 60px;
+    line-height: 25px;
+    color: #7c7c7c;
+
+}
+
+.company img {
+    position: relative;
+    top: 40px;
+}
+
+.company-1 {
+    float: left;
+    position: relative;
+    top: -693px;
+    left: 915px;
+}
+
+.company-1 h3 {
+    color: #3be2c6;
+    text-transform: uppercase;
+    font-size: 28px;
+    width: 25%;
+
+}
+
+.company-1 p {
+    width: 25%;
+    position: relative;
+    top: 40px;
+    line-height: 25px;
+    color: #7c7c7c;
+
+}
+
+.g {
+    position: relative;
+}
+
+.g-drop {
+    width: 250px;
+    height: 100hv;
+    background: #fff;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 0px 15px #0005;
+    z-index: 1000;
+
+}
+
+.g-drop a {
+    border-bottom: 1px solid #2b2b35bf;
+    display: inherit;
+    position: relative;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #2b2b35bf;
+    z-index: 1000;
+}
+
+.g:hover .g-drop {
+    display: block;
+}
+
+.g .g-drop a:hover {
+    color: #262b33;
+}
+
+.navi {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: relative;
+    top: 101px;
+}
+
+.navi span a {
+    color: #474f61;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 40px;
+    border-right: 2px solid #2b2b35bf;
+}
+
+.navi a {
+    color: #474f61;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 40px;
+}
+
+.outerbox {
+    background-color: black;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+    top: 101px;
+}
+
+.sliderbox {
+    position: relative;
+    width: 5760px;
+    animation-name: move1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    /* opacity: 0.5; */
+    top: -228px;
+}
+
+.sliderbox img {
+    float: left;
+   
+}
+
+@keyframes move1 {
+
+    0%,
+    20%,
+    100% {
+        left: 0px;
+    }
+
+    25% {
+        left: -1930px;
+    }
+
+    45% {
+        left: -1930px;
+    }
+
+    50% {
+        left: -4200px;
+    }
+
+    85% {
+        left: -4200px;
+    }
+
+    90% {}
+}
+
+.sbox {
+    background-color: #3be2c6db;
+    width: 25%;
+    height: 300px;
+    float: left;
+    z-index: 100;
+    position: relative;
+    top: -199px;
+    transition: 0.5s;
+}
+
+.sbox:hover {
+    background-color: #07b4b4db;
+    height:401px;
+    top: -300px;
+    display: block;
+}
+
+.outerbox h3 {
+    color: #fff;
+    position: relative;
+    top: 180px;
+    left: -5px;
+    z-index: 10;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.outerbox p {
+    color: #ffffffe8;
+    position: relative;
+    top: 229px;
+    left: -6px;
+    font-size: 31px;
+    z-index: 10;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sbox i {
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+    position: relative;
+    top: 63px;
+    left: 133px;
+}
+
+.sbox h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    position: relative;
+    top: 107px;
+    font-weight: 100;
+}
+
+.sbox button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    position: relative;
+    top: 150px;
+    left: 109px;
+    color: #fff;
+    padding: 10px 20px;
+    display: none;
+    transition: 1s;
+}
+
+.sbox button:before {
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-right: none;
+    left: 0;
+    right: 80%;
+    transition: 0.5s;
+
+}
+
+.sbox button:after {
+
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: none;
+    left: 80%;
+    right: 0;
+    transition: 0.5s;
+}
+
+.sbox button:hover:after {
+    border-left: none;
+    left: 50%;
+    right: 0;
+
+
+}
+
+.sbox button:hover:before {
+    border-right: none;
+    left: 0;
+    right: 50%;
+
+
+}
+
+.sbox:hover button {
+    display: block;
+
+}
+
+.text {
+    background-color: #fff;
+    width: 100%;
+    height: 600px;
+}
+
+.text h4 {
+    position: absolute;
+    top: 1120px;
+    left: 100px;
+    font-size: 55px;
+    font-weight: 50;
+    line-height: 90px;
+    width: 25%;
+}
+
+.text p {
+    position: absolute;
+    top: 1140px;
+    left: 500px;
+    font-size: 20px;
+    font-weight: 100;
+    width: 20%;
+    color: #0009;
+}
+
+.text article {
+    position: absolute;
+    top: 1140px;
+    left: 871px;
+    font-size: 20px;
+    font-weight: 100;
+    width: 20%;
+    color: #0009;
+}
+
+.options {
+    background-image:linear-gradient(to right,rgba(7, 7, 7, 0.592),rgba(255, 255, 255, 0.527)),
+     url(img/bg-img.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    /* height: 100hv; */
+    float: left;
+}
+
+.features {
+    width: 100%;
+    height: 300px;
+    background-color: #38f1e8b6;
+}
+
+.features p {
+    text-align: center;
+    line-height: 300px;
+    letter-spacing: 10px;
+    color: #fff;
+    font-size: 60px;
+
+}
+
+.opt {
+    width: 50%;
+    background-color: #fff8;
+    color: rgba(0, 0, 0, 0.616);
+    height: 400px;
+    text-align: center;
+    transition: 0.5s;
+    float: left;
+}
+.ppt{
+    background-color: rgba(0, 255, 221, 0.61);
+    color: #fff;
+}
+
+.opt i {
+    position: relative;
+    top: 100px;
+    font-size: 100px;
+    transition: 0.5s;
+
+
+}
+
+.opt h3 {
+    position: relative;
+    top: 120px;
+    font-size: 30px;
+    font-weight: 100;
+    transition: 0.5s;
+
+
+}
+
+.opt p {
+    position: relative;
+    top: 120px;
+    display: none;
+    font-size: 0;
+    width: 80%;
+    margin: 0 auto;
+    transition: 0.5s;
+
+
+}
+
+.opt:hover {
+    background-color: #0008;
+
+}
+
+.opt:hover p {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+}
+
+.opt:hover h3 {
+    top: 80px;
+    color: #fff;
+}
+
+.opt:hover i {
+    top: 60px;
+    color: #fff;
+}
+
+.allf {
+    width: 100%;
+    height: 300px;
+    background-color: #09e4d9a1;
+    float: left;
+}
+
+.allf button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    position: relative;
+    top: 124px;
+    left: 600px;
+    color: #fff;
+    padding: 15px 20px;
+    transition: 1s;
+    outline: none;
+}
+
+.allf button:before {
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-right: none;
+    left: 0;
+    right: 80%;
+    transition: 0.5s;
+
+}
+
+.allf button:after {
+
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: none;
+    left: 80%;
+    right: 0;
+    transition: 0.5s;
+}
+
+.allf button:hover:after {
+    border-left: none;
+    left: 50%;
+    right: 0;
+
+
+}
+
+.allf button:hover:before {
+    border-right: none;
+    left: 0;
+    right: 50%;
+
+
+}
+
+.our {
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+    float: left;
+}
+
+.our h3 {
+    font-size: 55px;
+    text-align: center;
+    position: relative;
+    top: 64px;
+    font-weight: 100;
+}
+
+.con {
+    width: 80%;
+    height: 100hv;
+    margin: 0 auto;
+    position: relative;
+    top: 130px;
+}
+
+.infor {
+    float: left;
+    width: 29%;
+    margin: 20px;
+}
+
+.infor h4 {
+    font-size: 26px;
+    color: #3be2c6;
+}
+
+.effect {
+    transition: 0.5s;
+}
+
+.effect span {
+    height: 188px;
+    width: 29%;
+    background: #0000005c;
+    color: #fff;
+    font-size: 45px;
+    position: absolute;
+    display: none;
+    transition: 0.5s;
+
+
+}
+
+.effect span i {
+    position: relative;
+    top: 36%;
+    left: 43%;
+    transition: 0.5s;
+}
+
+.effect:hover span {
+    display: block;
+}
+
+.effect span i:hover {
+    color: #3be2c6;
+}
+
+
+.con button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+    left: 461px;
+    color: #000;
+    padding: 15px 20px;
+    transition: 1s;
+    outline: none;
+}
+
+.con button:before {
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-right: none;
+    left: 0;
+    right: 80%;
+    border-color: #c7c7c7;
+    transition: 0.5s;
+
+}
+
+.con button:after {
+
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: none;
+    left: 80%;
+    right: 0;
+    transition: 0.5s;
+    border-color: #c7c7c7;
+}
+
+.con button:hover:after {
+    border-left: none;
+    left: 50%;
+    right: 0;
+
+
+}
+
+.con button:hover:before {
+    border-right: none;
+    left: 0;
+    right: 50%;
+
+
+}
+
+.infor h4:hover {
+    color: #000;
+}
+
+
+.last {
+    width: 100%;
+    background-image: url(img/banner_1.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.advice {
+    width: 100%;
+    height: 500px;
+    float: left;
+    background-color: #0ec2b9b3;
+    color: #fff;
+    text-align: center;
+}
+
+.advice h4 {
+    font-size: 50px;
+    position: relative;
+    top: 120px;
+    font-weight: 100;
+}
+
+.advice p {
+    position: relative;
+    top: 170px;
+}
+
+.advice form .inp {
+    position: relative;
+    top: 200px;
+    background: none;
+    border: 3px solid #fff;
+    width: 300px;
+    padding: 15px 20px;
+    margin: 20px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    
+}
+/*
+::-webkit-input-placeholder{
+    color: #fff;
+    font-size: 18px;
+}
+*/
+
+.advice form .sub {
+    position: relative;
+    top: 200px;
+    background: #192a3d;
+    border:none;
+    width: 200px;
+    padding: 15px 20px;
+    margin: 20px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+.advice form .sub:hover {
+    
+    background: #27d0c7;
+    
+}
+.test{
+    background-color: #fff;
+    width: 100%;
+    height: 700px;
+    float: left;
+    
+}
+.test h4 {
+    text-align: center;
+    font-size: 44px;
+    position: relative;
+    top: 60px;
+}
+.test img {
+    border-radius: 50%;
+    position: relative;
+    top: 125px;
+    left: 42%;
+}
+.test p {
+    text-align: center;
+    position: relative;
+    top: 171px;
+    line-height: 25px;
+    color: #909090;
+}
+.test h5 {
+    text-align: center;
+    font-size: 34px;
+    position: relative;
+    top: 142px;
+    color: #27d0c7;
+    
+}
+
+.test i {
+    width: 150px;
+    color: #909090;
+    font-size: 50px;
+    position: relative;
+    left: 75%;
+    top: -106px;
+}
+
+.test span i {
+    width: 150px;
+    color: #909090;
+    font-size: 50px;
+    position: relative;
+    left: 210px;
+    top: -106px;
+}
+.news {
+    width: 100%;
+    height: 700px;
+    float: left;
+    background-color: #192a3dc2;
+    color: #fff;
+    text-align: center;
+}
+
+.news h4 {
+    font-size: 50px;
+    position: relative;
+    top: 120px;
+    font-weight: 100;
+}
+.news p {
+    position: relative;
+    margin: 0 auto;
+    top: 170px;
+    width: 70%;
+}
+.news form .inp {
+    position: relative;
+    top: 200px;
+    background: none;
+    border: 3px solid #fff;
+    width: 300px;
+    padding: 15px 20px;
+    margin: 20px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.news form .sub {
+    position: relative;
+    top: 200px;
+    background: #27d0c7;
+    border: none;
+    width: 200px;
+    padding: 15px 20px;
+    margin: 20px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.news form .sub:hover {
+    
+    background: #192a3d;
+    
+}
+.news h5 {
+    font-size: 26px;
+    position: relative;
+    top: 246px;
+    font-weight: 100;
+}
+.icons div {
+    position: relative;
+    top: 278px;
+    left: 550px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 20px;
+}
+.icons div i {
+    position: relative;
+    top: 17px;
+    font-size: 32px;
+}
+
+.icons div:hover{
+    border: 3px solid #27d0c7;
+}
+
+.icons div:hover i{
+    color: #27d0c7;
+}
+
+.footer{
+    width: 100%;
+    height: 900px;
+    background-color: #fff;
+    float: left;
+}
+.footer h3{
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top:50px;
+    font-weight: 100;
+}
+
+table .inpt{
+    border: none;
+    border-bottom: 2px solid #eee;
+    position: relative;
+    top: 200px;
+    background: none;
+    width: 500px;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 18px;
+}
+table textarea{
+    border: none;
+    border-bottom: 2px solid #eee;
+    position: relative;
+    top: 200px;
+    background: none;
+    width: 500px;
+    height: 150px;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 18px;
+}
+table button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    position: relative;
+    top: 250px;
+/*    left: 461px;*/
+    color: #484848;
+    padding: 15px 20px;
+    transition: 1s;
+    outline: none;
+}
+
+table button:before {
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-right: none;
+    left: 0;
+    right: 80%;
+    border-color: #c7c7c7;
+    transition: 0.5s;
+
+}
+
+table button:after {
+
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: none;
+    left: 80%;
+    right: 0;
+    transition: 0.5s;
+    border-color: #c7c7c7;
+}
+
+table button:hover:after {
+    border-left: none;
+    left: 50%;
+    right: 0;
+
+
+}
+
+table button:hover:before {
+    border-right: none;
+    left: 0;
+    right: 50%;
+
+
+}
+table i{
+    font-size: 30px;
+    padding: 20px;
+    color: #27d0c7;
+}
+
+.det {
+    float: left;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+.form {
+    float: left;
+    position: relative;
+    top: -93px;
+    left: 304px;
+}
+.last .c {
+    position: relative;
+    top: 80%;
+    right: 52%;
+}
+
+
+
+
+
+@media (min-width:767){
+    nav{
+        width: 25%;
+        height: 90px;
+    }
+    nav h1{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

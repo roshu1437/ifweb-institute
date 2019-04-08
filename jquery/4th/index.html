@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery intro</title>
+	<link rel="shortcut icon" href="https://www.word-counter.org/img/favicon.png" type="image/x-icon">
+<style>
+textarea{
+	width:200px;
+	height:200px;
+	resize:none;
+}
+</style>
+</head>
+<body>
+<input type="color" id="c">
+<button type="button">test</button>
+<h1>Its Dummy text</h1>
+<div class="t1">
+	textarea 1
+	<span>0</span>
+</div>
+<textarea class="txt1"></textarea>
+<div class="t2">
+	textarea 2
+	<span>0</span>
+</div>
+<textarea class="txt2"></textarea>
+<div class="t3">
+	textarea 3
+	<span>0</span>
+</div>
+<textarea class="txt3"></textarea>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$('button').click(function(){
+			var hex_color=$('#c').val();
+			$('body').css('background',hex_color);
+		});
+		$('#c').change(function(){
+			var hex_color=$('#c').val();
+			$('body').css('background',hex_color);
+		});
+		$('buttont').click(function(){
+			var t_value=$('textarea').val();
+			alert(t_value);
+		});
+		$('.txt1').keyup(function(){
+			var t_value=$('.txt1').val();
+			var get_count=t_value.length;
+			$('.t1 span').text(get_count);
+		});
+		$('.txt2').keydown(function(){
+			var t_value=$('.txt2').val();
+			var get_count=t_value.length;
+			$('.t2 span').text(get_count);
+		});
+		$('.txt3').keypress(function(){
+			var t_value=$('.txt3').val();
+			var get_count=t_value.length;
+			$('.t3 span').text(get_count);
+		});
+	});
+</script>
+</body>
+</html>

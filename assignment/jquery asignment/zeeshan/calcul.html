@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculatr</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ 
+ <div id="calculator">
+        <div id="result"></div>
+        <span class="key">7</span>
+        <span class="key">8</span>
+        <span class="key">9</span>
+        <span class="key clear-key">C</span>
+        <span class="key">4</span>
+        <span class="key">5</span>
+        <span class="key">6</span>
+        <span class="key">/</span>
+        <span class="key">1</span>
+        <span class="key">2</span>
+        <span class="key">3</span>
+        <span class="key">*</span>
+        <span class="key">0</span>
+        <span class="key">00</span>
+        <span class="key">.</span>
+        <span class="key">+</span>
+        <span class="key">=</span>
+        <span class="key">-</span>
+    </div>
+
+<script src="jquery.js"></script>
+<script>
+	
+	 var displayValue = '0';   
+    $('#result').text(displayValue);
+ 
+    $('.key').each(function(index, key){       
+        $(this).click(function(e){
+            if(displayValue == '0') displayValue = '';
+            if($(this).text() == 'C')
+            {
+                displayValue = '0';
+                $('#result').text(displayValue);
+            }
+            else if($(this).text() == '=')
+            {
+                try
+                {
+                    displayValue = eval(displayValue);
+                    $('#result').text(displayValue);
+                    displayValue = '0';
+                }
+                catch (e)
+                {
+                    displayValue = '0';
+                    $('#result').text('ERROR');
+                }               
+            }
+            else
+            {
+                displayValue += $(this).text();
+                $('#result').text(displayValue);
+            }
+            e.preventDefault()
+        })
+    })
+</script>
+</body>
+</html>

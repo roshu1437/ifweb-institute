@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="shortcut icon" type="image/x-icon" href="calc.png">
+</head>
+<body>
+<style>
+*{
+	font-size: 20px;
+}
+.main{
+	width: 400px;
+	height: 520px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid #000;
+}
+input{
+	box-sizing: border-box;
+	width: 100%;
+	height: 35px;
+	padding: 10px;
+	margin-top: 10px;
+	float: left;
+	border-radius: 5px;
+	background: #fff;
+	outline: none;
+}
+[type='submit']{
+	width: 22%;
+	height: 55px;
+	margin: 6px;
+	background: #795548e0;
+}
+.clear{
+	width: 97%;
+	background: #4caf50e0;
+}
+.op{
+	background: #009688;
+}
+</style>
+<div class="main">
+	<input type="text" placeholder="First Value" id="v1">
+	<input type="text" placeholder="Operator" id="op">
+	<input type="text" placeholder="Second Value" value="" id="v2">
+	<input type="text" placeholder="Result" id="ans">
+	<input type="submit" class="clear" value="Clear">
+	<input type="submit" class="value" value="7">
+	<input type="submit" class="value" value="8">
+	<input type="submit" class="value" value="9">
+	<input type="submit" class="op" value="+">
+	<input type="submit" class="value" value="4">
+	<input type="submit" class="value" value="5">
+	<input type="submit" class="value" value="6">
+	<input type="submit" class="op" value="-">
+	<input type="submit" class="value" value="1">
+	<input type="submit" class="value" value="2">
+	<input type="submit" class="value" value="3">
+	<input type="submit" class="op" value="*">
+	<input type="submit" class="value" value="0">
+	<input type="submit" class="value" value=".">
+	<input type="submit" class="res" value="=">
+	<input type="submit" class="op" value="/">
+</div>
+<script src="jQuery.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.op').click(function(){
+			var opr=$(this).val();
+			$('#op').val(opr);
+		});
+		$('.value').click(function(){
+			var val=$('#op').val();
+			if (val!='') {
+				$('#v2').val($('#v2').val() + $(this).val());
+			}
+			else{
+				$('#v1').val($('#v1').val() + $(this).val());
+			}
+		});
+		$('.res').click(function(){
+			var v1=parseInt($('#v1').val());
+			var v2=parseInt($('#v2').val());
+			var op=$('#op').val();
+			if (op == '+') {
+				$("#ans").val(v1+v2);
+			}
+			else if (op == '-'){
+				$("#ans").val(v1-v2);
+			}
+			else if (op == '*'){
+				$("#ans").val(v1*v2);
+			}
+			else if (op == '/'){
+				$("#ans").val(v1/v2);
+			}
+		});
+		$('.clear').click(function () {
+			$('#v1').val('');
+			$('#v2').val('');
+			$('#op').val('');
+			$('#ans').val('');
+		});
+	});
+</script>
+</body>
+</html>

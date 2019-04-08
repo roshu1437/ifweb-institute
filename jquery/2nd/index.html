@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery intro</title>
+<style>
+.b{color:blue}
+</style>
+</head>
+<body>
+<h1>Its Dummy Text</h1>
+<button type="button" class="h">Hide</button>
+<button type="button" class="s">Show</button>
+<button type="button" class="t">Toggle</button>
+<button type="button" class="sd">SlideDown</button>
+<button type="button" class="sp">SlideUp</button>
+<button type="button" class="css">color red</button>
+<button type="button" class="adc">color blue</button>
+<script src="jquery.js"></script>
+<script>
+	$('.h').click(function(){
+		$('h1').hide(1000);
+	});
+	$('.s').click(function(){
+		$('h1').show(2000);
+	});
+	$('.t').click(function(){
+		$('h1').toggle(1000);
+	});
+	$('.sd').click(function(){
+		$('h1').slideDown();
+	});
+	$('.sp').click(function(){
+		$('h1').slideUp();
+	});
+	$('.css').click(function(){
+		$('h1').css('color','red');
+	});
+	$('.adc').click(function(){
+		$('h1').addClass('b');
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.main_div{
+	width: 100%;
+	height: 1000px;
+	background-image: url(pc1.jpg);
+}
+.head{
+	width: 100%;
+	height: 80px;
+	background-color:gray;
+}
+.inner{
+	width: 80%;
+	height: 1000px;
+	margin: 0px auto;
+}
+.logo{
+	width:30%;
+	height: 80px;
+	font-size: 30px;
+}
+.nav ul{
+      float:right;
+	  position:absolute;
+	  right:190px;
+	  top:20px;
+	  }
+.nav ul li{
+						margin:10px;
+						list-style:none;
+						display:inline-block;
+						text-decoration:none;
+					
+						}
+.nav ul li a{
+                        color:white;
+						text-decoration: none;
+						font-size:25px;
+						padding:5px;
+						
+						}
+.nav ul li a:hover{
+						
+							color: red;
+							}
+
+.form1{
+	width: 50%;
+	height: 500px;
+	background-color:black;
+	float: left;
+	margin-top:40px;
+
+}
+.div1{
+	width: 50%;
+	height: 300px;
+	float: right;
+	margin-top: 100px;
+}
+.h1{
+	color: white;
+	margin: 20px;
+}
+.h4{
+	color: white;
+	margin: 20px;
+}
+.input_type1{
+     margin: 10px;
+	width:40%;
+	height: 40px;
+	border-radius: 6px;
+
+}
+.input_type2{
+	width:40%;
+	height: 50px;
+	border-radius: 6px;
+	margin: 10px;
+
+}
+.button{
+	width: 30%;
+	height: 40px;
+	border-radius: 3px solid;
+	margin: 10px;
+	background-color: orange;
+	color: white;
+
+}
+.form{
+	width: 100%;
+	height: 500px;
+		position: relative;
+	left: 100px;
+}
+
+.text{
+	position: relative;
+	left: 100px;
+	color:white;
+}
+.text2{
+	position: relative;
+	left: 50px;
+	color:white;
+	margin-top: 20px;
+	line-height: 10px;
+}
+.button1{
+	width: 30%;
+	height: 40px;
+	position: relative;
+	top: 50px;
+	left: 120px;
+	background-color: orange;
+	
+}
+.button2{
+	width: 30%;
+	height: 40px;
+	position: relative;
+	top: 50px;
+	left: 140px;
+	color: white;
+	background-color: black;
+}

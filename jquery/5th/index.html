@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery intro</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<input type="text" placeholder="value 1" id="v1">
+	<input type="text" placeholder="value 2" id="v2">
+	<select id="opr">
+		<option value="pl">+</option>
+		<option value="ml">*</option>
+		<option value="di">/</option>
+		<option value="mi">-</option>
+	</select>
+	<input type="button" id="check" value="check">
+	<div class="res"></div>
+	<div class="cart">0</div>
+	<div class="test"></div>
+	<div class="box" set-data="mob">1</div>
+	<div class="box" set-data="game">2</div>
+	<div class="box" set-data="tv">3</div>
+	<div class="box" set-data="music">4</div>
+	<div class="box" set-data="pic">5</div>
+	<div class="box" set-data="images">6</div>
+	<div class="box" set-data="movies">7</div>
+	<div class="box">8</div>
+	<div class="box">9</div>
+	<div class="box">10</div>
+	<div class="box">11</div>
+	<div class="box">12</div>
+	<div class="box">13</div>
+	<div class="box">14</div>
+	<div class="box">15</div>
+	<div class="box">16</div>
+	<div class="box">17</div>
+	<div class="box">18</div>
+	<div class="box">19</div>
+	<div class="box">20</div>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.box').click(function(){
+			var cart=parseInt($('.cart').text());
+			$('.cart').text(cart+1);
+			var product=$(this).attr('set-data');
+			var html='<input type="hidden" value="'+product+'">';
+			$('.test').append(html);
+			$(this).fadeOut();
+		});
+		$('#opr').change(function(){
+			var v1=parseInt($('#v1').val());
+			var v2=parseInt($('#v2').val());
+			var opr=$('#opr').val();
+			if(opr=='pl'){
+				$('.res').text(v1+v2);
+			}else if(opr=='di'){
+				$('.res').text(v1/v2);
+			}else if(opr=='mi'){
+				$('.res').text(v1-v2);
+			}else if(opr=='ml'){
+				$('.res').text(v1*v2);
+			}
+		});
+	});
+</script>
+</body>
+</html>

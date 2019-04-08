@@ -1,0 +1,155 @@
+div{
+	float:left;}
+.Tnav2{
+	width:100%;
+	height:40px;
+	background:#f9f9f9a3;
+	}
+	.Tnav2 a{
+		position:relative;
+		left:20px;
+		float:left;
+		text-decoration:none;
+		line-height:40px;
+		color:#7c8c89a3;
+		font-size:15px;
+		font-family:fantasy;
+		margin:0px 20px 0px 20px;}
+	.Tnav2 hr{
+		position:relative;
+		left:20px;
+		width:2px;
+		height:20px;
+		float:left;
+		margin:10px 0px 10px 0px;
+		background:#CCC;
+		border:none;
+		}
+.divsfour{
+	width:100%;
+	height:450px;
+	background:#f8f8f9;}
+	.ib{
+		position:relative;
+		top:50px;
+		left:35%;
+		color:#000;
+		font-size:90px;
+		transition:0.5s;}
+	.divsfourh2{
+		position:relative;
+		top:50px;
+		text-align:center;
+		color:#000;
+		font:26px/37px Montserrat, sans-serif;
+		letter-spacing:3px;
+		margin:20px 0px 20px 0px;
+		transition:0.5s;}
+	.divsfourp{
+		position:relative;
+		top:50px;
+		text-align:center;
+		font:300 18px/28px Roboto, sans-serif;
+		color:#8594a7;
+		margin: 0px 15px 0px 16px;
+		transition:0.5s;}
+.divsfour-sec1{
+	width:25%;
+	height:450px;}
+	.sec1-sec2-sec3-sec4{
+		position:relative;
+		top:0px;
+		width:100%;
+		height:450px;
+		transition:0.5s;}
+.divsfour-sec1:hover .sec1-sec2-sec3-sec4{
+	top:-30px;
+	height:510px;
+	background:#0ca289;
+	color:#FFF;}
+.divsfour-sec1:hover .divsfourp{
+	color:#FFF;}
+.divsfour-sec1:hover .divsfourh2{
+	color:#FFF;}
+.divsfour-sec1:hover .ib{
+	color:#FFF;}
+.divsfour-sec2{
+	width:25%;
+	height:450px;}
+	
+.divsfour-sec2:hover .sec1-sec2-sec3-sec4{
+	top:-30px;
+	height:510px;
+	background:#0ca289;
+	color:#FFF;}
+.divsfour-sec2:hover .divsfourp{
+	color:#FFF;}
+.divsfour-sec2:hover .divsfourh2{
+	color:#FFF;}
+.divsfour-sec2:hover .ib{
+	color:#FFF;}
+	
+.divsfour-sec3{
+	width:25%;
+	height:450px;}
+.divsfour-sec3:hover .sec1-sec2-sec3-sec4{
+	top:-30px;
+	height:510px;
+	background:#0ca289;
+	color:#FFF;}
+.divsfour-sec3:hover .divsfourp{
+	color:#FFF;}
+.divsfour-sec3:hover .divsfourh2{
+	color:#FFF;}
+.divsfour-sec3:hover .ib{
+	color:#FFF;}
+	
+.divsfour-sec4{
+	width:25%;
+	height:450px;}
+.divsfour-sec4:hover .sec1-sec2-sec3-sec4{
+	top:-30px;
+	height:510px;
+	background:#0ca289;
+	color:#FFF;}
+.divsfour-sec4:hover .divsfourp{
+	color:#FFF;}
+.divsfour-sec4:hover .divsfourh2{
+	color:#FFF;}
+.divsfour-sec4:hover .ib{
+	color:#FFF;}
+
+	
+	
+	
+	
+	
+	
+
+.lastdiv{
+	width:100%;
+	height:200px;
+	background:#FFF;}
+	.lastdiv h4{
+		float:left;
+		margin-top: 10px;
+		font-size: 20px;
+		padding-left:400px;}
+	.lastdiv p{
+		float:left;
+		margin-left:20px;
+		font-size: 30px;
+		color:black;
+		}
+
+
+
+
+
+		.pic{
+			width: 50px;
+			height: 50px;
+			background:url(pic4.jpg);
+			margin-top: 90px;
+			margin-left: 130px;
+		}

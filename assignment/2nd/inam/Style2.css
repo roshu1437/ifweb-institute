@@ -1,0 +1,572 @@
+@media(max-width:1600px){
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background:url("bluetec.jpg");
+	background:cover;
+	background-size:100% 100%;
+	}
+	
+.nav{
+	color:white;
+	background-color:#06F;
+	width:100%;
+	height:50px;
+	}
+.navlinks{
+	float:right;
+	position:relative;
+	right:200px;
+	}
+.navlinks a{
+	text-decoration:none;
+	color:white;
+	margin:10px;
+	line-height:50px;
+	}
+.nav2{
+	width:100%;
+	height:150px;
+	background-color:#fff;
+	}
+.logoarea{
+	float:left;
+	width:30%;
+	height:150px;
+	}
+.logoarea h6{
+	float:left;
+	line-height:150px;
+	font-size:40px;
+	position:relative;
+	left:160px;
+	}
+.extrafeatures{
+	width:70%;
+	float:left;
+	}
+.extrafeatures a{
+	text-decoration:none;
+	line-height:150px;
+	color:#09F;
+	position:relative;
+	left:80px;
+	margin:0px 20px 0px 10px;
+	font-size:18px;	
+	}
+.box1{
+	float:left;
+	width:100%;
+	height:500px;
+	}
+.box{
+	float:left;
+	width:100%;
+	height:500px;
+	}
+.w{background-color:#FFF;}
+.lg{background-color:#CCC;}
+.txt{
+	float:left;
+	width:65%;
+	height:500px;
+	}
+.txtpos{
+	float:left;
+	width:65%;
+	height:400px;
+	position:relative;
+	top:70px;
+	left:140px;}
+.pic{
+	width:35%;
+	height:500px;
+	float:right;
+	}
+.pic img{
+	float:left;
+	width:280px;
+	height:275px;
+	position:relative;
+	top:180px;
+	left:250px;
+	}
+.at{
+	float:left;
+	color:#000;
+	font-size:40px;
+	}
+.txt h1{
+	margin-top:10px;
+	float:left;
+	color:#309;
+	font-size:30px;
+	}
+.txt hr{
+	float:left;
+	width:100px;
+	height:3px;
+	border:none;
+	background-color:#000;
+	position:relative;
+	top:80px;
+	right:300px;
+	
+	}
+.txt p{
+	float:left;
+	text-align:left;
+	font-size:20px;
+	position:relative;
+	top:60px;
+	left:10px;
+	}
+.butt{
+	float:left;
+	background-color:#000;
+	opacity:0.75;
+	height:40px;
+	width:150px;
+	border:none;
+	color:#FFF;
+	position:relative;
+	top:90px;
+	left:10px;
+	}
+.divs4{
+	float:left;
+	width:100%;
+	height:300px;
+}
+.adivs{
+	float:left;
+	width:25%;
+	height:300px;
+	background-color:#069;
+	color:#FFF;
+	}
+.ferozzy{background-color:#0F9;}
+.ly{background-color:#FF9}
+.divs4 p{
+	float:left;
+	text-align:left;
+	width:80%;
+	height:115px;
+	position:relative;
+	top:50px;
+	left:20px;
+	}
+.adivs h2{
+	float:left;
+	color:#FFF;
+	font-size:24px;
+	position:relative;
+	top:30px;
+	left:20px;
+	}
+.adivs i{
+	font-size:34px;
+	position:relative;
+	top:250px;
+	right:280px
+	}
+.l2div{
+	background-color:#09F;
+	float:left;
+	width:100%;
+	height:380px;
+	}
+.sml{
+	float:left;
+	width:70%;
+	height:350px;
+	position:relative;
+	top:25px;
+	left:150px;
+	}
+.sml h2{color:#FFF;
+font-size:30px;
+margin-bottom:20px;}
+.bl{
+	height:270px;
+	width:49%;
+	float:left;
+	background-color:#9CF;
+}
+.sl{
+	width:21%;
+	height:270px;
+	float:left;
+    position: relative;
+    left: 40px;
+	}
+.sl1{background-color:#9CF;
+	width:80%;
+	height:40px;
+	float:left;
+	margin:10px 0px 3px 0px;
+	}
+.smi{
+	float:left;
+	width:22%;
+	height:150px;
+    position: relative;
+    top: 170px;
+	}
+.smi h2{
+	color:white;
+	font-size:40px;
+    position: relative;
+    left:35px;
+	}
+.facebook{
+	float:left;
+	margin:0px 10px 0px 10px;
+	border-radius:40px;
+	}
+.whatsapp{
+	float:left;;
+	margin:0px 10px 0px 10px;
+	border-radius:40px;
+}
+.youtube{
+	float:left;
+	margin:0px 10px 0px 10px;
+	border-radius:40px;
+	}
+.si{
+	width:80px;
+	height:80px;
+	border-radius:40px;
+	}
+.ldiv{
+	width:100%;
+	height:50px;
+	float:left;
+	background-color:#999;
+	}
+.ldiv p{color:#FFF;
+		padding:15px 0px 5px 200px;
+		float:left;
+	}
+.ldiv1{
+	background-color:#006;
+	width:5%;
+	height:50px;
+	float:right;}
+}
+@media(max-width:768px){
+	.nav{display:none;}
+
+.nav2{
+	width:100%;
+	height:150px;
+	background-color:#fff;
+	}
+.logoarea{
+	float:left;
+	width:30%;
+	height:150px;
+	}
+.logoarea h6{
+	float:left;
+	line-height:150px;
+	font-size:40px;
+	position:relative;
+	left:60px;
+	}
+.extrafeatures{display:none;}
+
+.box1{
+	float:left;
+	width:100%;
+	height:500px;
+	}
+.box{
+	float:left;
+	width:100%;
+	height:500px;
+	}
+.txtpos{
+	float:left;
+	width:65%;
+	height:400px;
+	position:relative;
+	top:40px;
+	left:40px;}
+
+.pic img{
+	float:left;
+	width:280px;
+	height:275px;
+	position:relative;
+	top: 234px;
+    left: 0;
+	}
+.at{
+	float:left;
+	color:#000;
+	font-size:40px;
+	}
+.txt h1{display:none;
+	}
+.txt hr{display:none;}
+.txt p{display:none;}
+.butt{display:none;}
+	
+.divs4{
+	float:left;
+	width:100%;
+	height:600px;
+}
+.adivs{
+	float:left;
+	width:50%;
+	height:300px;
+	background-color:#069;
+	color:#FFF;
+	}
+.ferozzy{background-color:#0F9;}
+.ly{background-color:#FF9}
+.divs4 p{display:none;}
+.adivs h2{display:none;}
+.adivs i{
+	font-size:34px;
+	position:relative;
+    top: 120px;
+    left: 160px;
+	}
+.l2div{
+	background-color:#09F;
+	float:left;
+	width:100%;
+    height:461px;
+	}
+.sml{
+	float:left;
+	width:70%;
+	height:350px;
+	position:relative;
+	top:47px;
+	left:150px;
+	}
+.sml h2{display:none;}
+.bl{
+	height:140px;
+	width:93%;
+	float:left;
+	background-color:#9CF;
+}
+.sl{
+	width:21%;
+	height:270px;
+	float:left;
+    position: relative;
+    left: 40px;
+	}
+.sl1{background-color:#9CF;
+    width: 187%;
+    height: 26px;
+	float:left;
+	margin:10px 0px 3px 0px;
+    position: relative;
+    left: 93px;
+	}
+.smi{
+    float: left;
+    width: 28%;
+    height: 44px;
+    position: relative;
+    top: 390px;
+    right: 239px;
+	}
+.smi h2{display:none;
+	}
+.facebook{
+	float:left;
+	margin:0px 10px 0px 10px;
+	border-radius:40px;
+	}
+.whatsapp{
+	float:left;;
+	margin:0px 10px 0px 10px;
+	border-radius:40px;
+}
+.youtube{
+	float:left;
+	margin:0px 10px 0px 10px;
+	border-radius:40px;
+	}
+.si{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+	}
+.ldiv{
+	width:100%;
+	height:50px;
+	float:left;
+	background-color:#999;
+	}
+.ldiv p{color:#FFF;
+		padding:5px;
+	}
+	
+.ldiv1{
+	background-color:#006;
+	width:8%;
+	height:50px;
+	float:right;
+	}
+}
+@media(max-width:321px){
+	.nav{display:none;}
+	.nav2{
+	width:100%;
+	height:70px;
+	background-color:#fff;
+	}
+	.extrafeatures{display:none;}	
+	.logoarea{
+	float:left;
+	width:30%;
+	height:70px;
+	}
+	.logoarea h6{
+	line-height:70px;
+	font-size:20px;
+	margin:0px 0px 0px 50px;
+		}
+	hr{display:none;}
+	.headings{display:none;}
+	p{display:none;}
+	button{display:none;}
+.box{
+	float:left;
+	width:100%;
+	height:500px;
+	}
+.box1{
+	float:left;
+	width:100%;
+	height:700px;
+	}
+	.at{
+		float:left;
+		color:#000;
+		font-size:40px;
+		margin:20px 0px 0px 10px;
+	}
+	.txt{
+	float:left;
+	width:100%;
+	height:250px;
+	
+	}
+.pic{
+	float:left;
+	width:100%;
+	height:250px;
+	padding:0px 0px 0px 0px;
+	}
+.pic img{
+	float:right;
+	width:200px;
+	height:260px;
+	overflow:hidden;
+	margin:0px 0px 0px 0px;
+	}
+	.divs4{
+	float:left;
+	width:100%;
+	height:1000px;
+	background-color:red;
+	}
+.adivs{
+	float:left;
+	width:100%;
+	height:250px;
+	background-color:#069;
+	box-sizing:border-box;
+	padding:30px 10px 10px 10px;
+	color:#FFF;
+	}
+.ferozzy{background-color:#0F9;}
+.ly{background-color:#FF9}
+
+.adivs h2{display:none;
+	}
+.adivs i{
+	font-size:34px;
+	margin:80px 0px 0px 130px;
+	}
+	
+.l2div{
+	background-color:#09F;
+	width:100%;
+	height:470px;
+	}
+	.sml{
+		box-sizing:border-box;
+		width:100%;
+		height:400px;
+		padding:0px 0px 0px 0px;
+		box-sizing:border-box;
+		}
+			.bl{
+				height:200px;
+				width:70%;
+				margin:50px 0px 10px 55px;
+				}
+			.sl{float:left;
+				width:70%;
+				height:140px;
+				margin-left:55px;
+				}
+				.sl1{background-color:#9CF;
+					width:80%;
+					height:15px;
+					float:left;
+					margin:10px 0px 2px 0px;
+					margin-left:10%;
+				}
+	.sml h2{display:none;}
+	.socialmediaicon{
+		padding:0px 0px 0px 77px;
+		width:100%;
+		height:70px;
+		}
+	.smi h2{display:none;}
+	.facebook{
+			float:left;
+			margin:0px 10px 0px 10px;
+				}
+	.whatsapp{
+			float:left;
+			margin:0px 10px 0px 10px;
+			}
+	.youtube{
+			float:left;
+			margin:0px 10px 0px 10px;
+		}
+	.si{
+			width:40px;
+			height:40px;
+			border-radius:20px;}
+.ldiv{
+	width:100%;
+	height:50px;
+	float:left;
+	background-color:#999;
+	}
+.ldiv p{color:#FFF;
+		padding:5px;
+	}
+.ldiv1{
+	background-color:#006;
+	width:10%;
+	height:50px;
+	float:right;}	
+	}
