@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Intro</title>
+</head>
+<body>
+<style>
+.box{
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin-top: 20px;
+	float: right;
+	display: none;
+}
+</style>
+<input type="text" id="user" placeholder="user name here">
+<input type="color" id="color">
+<div class="box">
+	
+</div>
+<button id="get">Check Code</button>
+<script src="jquery.js"></script>
+<script>
+	$('#get').click(function(){
+		// var variable_name='variable_value';
+		var user_value=$('#user').val();
+		var color=$('#color').val();
+		// alert(color);
+		$('.box').css('background-color',color);
+	});
+	setTimeout(function(){
+		$('.box').show(5000);
+	},5000);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

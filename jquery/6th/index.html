@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Intro</title>
+</head>
+<body>
+<style>
+.box{
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin-top: 20px;
+	float: right;
+	display: none;
+}
+</style>
+<select id="select">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+</select>
+<textarea id="textarea" rows="10" cols="100">
+	
+</textarea>
+<div class="msg">Total Character: <span>0</span></div>
+<div class="msg2">Total Character with out space: <span>0</span></div>
+<div class="msg1">Total word: <span>0</span></div>
+<button id="get">Check Code</button>
+<script src="jquery.js"></script>
+<script>
+	$('#select').change(function(){
+		alert($('#select').val());
+	});
+	
+	// $('#get').click(function(){
+	// $('#textarea').keypress(function(){
+	// $('#textarea').keyup(function(){
+	$('#textarea').keydown(function(){
+		var text_val = $('#textarea').val();
+		var total=text_val.length;
+		var wcc=text_val.split(' ');
+		// var r=text_val.replace('test','b');
+		// if(total > 10){
+		if(total < 10){
+			// alert('only 10 charcters allow');
+		}
+		var wc=wcc.length;
+		var wcs=total-wc+1;
+		// alert(wcs);
+		$('.msg span').text(total);
+		$('.msg1 span').text(wc);
+		$('.msg2 span').text(wcs);
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

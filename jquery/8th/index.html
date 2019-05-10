@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Intro</title>
+</head>
+<body>
+<style>
+.box{
+	background: red;
+	margin:10px;
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #fff;
+	float: left;
+}
+</style>
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+<div class="box">Box 4</div>
+<div class="box">Box 5</div>
+<div class="box">Box 6</div>
+<input type="file" id="img">
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$('.box').click(function(){
+		$(this).hide();
+	});
+	$('#img').change(function(){
+		var img_name=this.files[0].name;
+		var img_size=this.files[0].size;
+		var img_type=this.files[0].type;
+		var ext=img_type.split('/');
+		// if(ext[1] != 'png'){
+		// 	alert('Only png files allowed');
+		// 	return false;
+		// }
+		// if(img_size > 1024*1024*1){
+		// 	alert('Maximum File size is 1MB');
+		// 	return false;
+		// }
+		console.log(this.files                       );
+		console.log(ext);
+	});
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+div{
+	float: left;
+	box-sizing:border-box;
+}
+p{
+	font-size: 40px;
+}
+.box{
+	width:150px;
+	height: 200px;
+	margin:0px auto;
+	background:red;
+	float: none;
+	font-size:20px;
+	color: #fff;
+	text-align: center;
+	line-height: 200px;
+	animation-name: am;
+	animation-duration: 10s;
+	/*animation-iteration-count: 4;*/
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+}
+@keyframes am{
+	/*from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}*/
+	0%{transform: rotate(0deg);background:#8558BC;}
+	25%{transform: rotate(280deg);background:#C3AE38;}
+	50%{transform: rotate(-280deg);background:#2EAA83;}
+	75%{transform: rotate(0deg);background:#D98344;}
+	100%{transform: rotate(-360deg);background:#DD269A}
+}
+.d3{
+	width: 100%;
+	perspective: 1000px;
+}
+.aim{
+	animation-name: aim;
+	width:200px;
+	height: 200px;
+	margin:0px auto;
+	background:red;
+	float: none;
+	font-size:20px;
+	color: #fff;
+	text-align: center;
+	line-height: 200px;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+}
+@keyframes aim{
+	from{transform: rotateY(0deg);}
+	to{transform: rotateY(360deg);}
+}
+.parent{}
+.parent .child{}
+.parent.child{}

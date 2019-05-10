@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Intro</title>
+</head>
+<body>
+<style>
+.box{
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin-top: 20px;
+}
+</style>
+<button class="test1">Test 1</button>
+<button class="test2">Test 2</button>
+<button class="h">Hide</button>
+<button class="s">Show</button>
+<button class="b">Show/Hide</button>
+<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+<script src="jquery.js"></script>
+<script>
+// $('selector').event name(function(){write code});
+// jquery('selector').event name(function(){write code});
+// alert('My name is ali');
+$('.test1').click(function(){
+	alert('abc');
+});
+$('.test2').click(function(){
+	alert('xyz');
+});
+$('.h').click(function(){
+	$('.box').hide();
+});
+$('.s').click(function(){
+	$('.box').show();
+});
+$('.b').click(function(){
+	// $('.box').toggle();
+	$('.box').toggle(1000);
+});
+</script>
+</body>
+</html>

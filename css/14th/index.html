@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>CSS Intro</title>
+</head>
+<style>
+.box{
+	width: 150px;
+	height: 150px;
+	line-height:150px;
+	background: black;
+	margin:0px auto;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	transform: rotate(30deg);
+	/*transform: rotateY(30deg);*/
+	/*transform: rotateX(30deg);*/
+	/*transform: rotateZ(30deg);*/
+	/*transform: skew(35deg);*/
+}
+.box div{
+	transform:rotate(-30deg);
+}
+.animate{
+	width:100px;
+	height:100px;
+	background: red;
+	margin:0px auto;
+	animation-name: test;
+	animation-duration:2s;
+	/*animation-delay:5s;*/
+	animation-iteration-count:infinite;
+	text-align: center;
+	line-height: 100px;
+	animation-timing-function: linear;
+	color: #fff;
+}
+@keyframes test{
+	from{
+		/*background:yellow;*/
+		border-radius: 0px;
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+		/*background:blue;*/
+		border-radius: 50px;
+	}
+}
+.animate2{
+	width:100px;
+	height:100px;
+	background: red;
+	animation-name: move;
+	animation-duration:2s;
+	position: relative;
+	animation-delay:5s;
+	animation-iteration-count:infinite;
+	text-align: center;
+	line-height: 100px;
+	animation-timing-function: linear;
+	color: #fff;
+}
+@keyframes move{
+	0%{left:0px;top:0px;transform:rotate(0deg);}
+	25%{left:100px;top:0px;transform:rotate(0deg);}
+	50%{left:100px;top:100px;transform:rotate(0deg);}
+	60%{left:100px;top:100px;transform:rotate(-90deg);}
+	75%{left:0px;top:100px;transform:rotate(0deg);}
+	100%{left:0px;top:0px;transform:rotate(360deg);}
+}
+
+
+/*() Function
+{} code
+[] index*/
+</style>
+<body>
+	<div class="animate2">Lorem ipsum</div>
+	<!-- <div class="animate">Lorem ipsum</div> -->
+	<!-- <div class="box"><div>Box	</div></div> -->
+</body>
+</html>

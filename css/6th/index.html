@@ -1,0 +1,116 @@
+<html>
+<head>
+	<title>CSS Intro</title>
+</head>
+<body>
+<style>
+*{
+	padding: 0px;
+	margin: 0px;
+}
+div{
+	box-sizing:border-box;
+	float: left;
+}
+.box{
+	background: red;
+	width: 200px;
+	height: 200px;
+	margin:0px auto;
+	float: none;
+	color: White;
+	text-align: center;
+	font-size: 20px;
+	line-height: 200px;
+	/*transition:2s;*/
+}
+.box:hover{
+	background: black;
+	border-radius: 50px;
+	font-size:40px;
+}
+.box1{
+	transition: 2s;
+}
+.t{
+	background: red;
+	width:100px;
+	height: 300px;
+	position: relative;
+	margin:0px auto;
+	float: none;
+	overflow: hidden;
+}
+.test{
+	/*display: none;*/
+	position: absolute;
+	transition: 2s;
+	bottom: -200px;
+}
+.t:hover .test{
+	/*display: block;*/
+	bottom: 0px;
+}
+.main{
+	background: red;
+	width:300px;
+	height: 300px;
+	margin:0px auto;
+	float: none;
+	position: relative;
+	overflow: hidden;
+}
+.inner_left{
+	background: green;
+	width:100%;
+	height: 100%;
+	position: absolute;
+	left: -300px;
+	transition: 0.5s;
+}
+.inner_right{
+	background: yellow;
+	width:100%;
+	height: 100%;
+	position: absolute;
+	right: -300px;
+	transition: 0.5s;
+}
+.main:hover .inner_left{
+	left: 150px;
+	border-radius:200px;
+}
+.main:hover .inner_right{
+	right: 150px;
+	border-radius:200px;
+}
+/*pseudo selector*/
+/*selector:name*/
+</style>
+<!-- <div class="box">
+	Test
+</div>
+<div class="box box1">
+	Test
+</div> -->
+<!-- <div class="t">
+	Show Links
+	<ul class="test">
+		<li>Link 1</li>
+		<li>Link 2</li>
+		<li>Link 3</li>
+		<li>Link 4</li>
+		<li>Link 5</li>
+		<li>Link 6</li>
+		<li>Link 7</li>
+		<li>Link 8</li>
+		<li>Link 9</li>
+		<li>Link 10</li>
+	</ul>
+</div> -->
+<div class="main">
+	<div class="inner_left"></div>
+	<div class="inner_right"></div>
+</div>
+</body>
+</html>

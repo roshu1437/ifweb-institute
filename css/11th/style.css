@@ -1,0 +1,11 @@
+div{float: left}
+.box{
+	width: 200px;
+	height: 200px;
+	margin:2px;
+	background: red !important;
+}
+.test{
+	font-size: 60px;
+	color: red;
+}

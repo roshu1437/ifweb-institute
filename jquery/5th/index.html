@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Intro</title>
+</head>
+<body>
+<style>
+.box{
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin-top: 20px;
+	float: right;
+	display: none;
+}
+</style>
+<textarea id="textarea" rows="10" cols="100">
+	
+</textarea>
+<div class="msg">Total Character: <span>0</span></div>
+<div class="msg1">Total word: <span>0</span></div>
+<button id="get">Check Code</button>
+<script src="jquery.js"></script>
+<script>
+	// $('#get').click(function(){
+	$('#textarea').keypress(function(){
+		var text_val = $('#textarea').val();
+		var total=text_val.length;
+		var wcc=text_val.split(' ');
+		if(total > 10){
+		// if(total < 10){
+			alert('only 10 charcters allow');
+		}
+		var wc=wcc.length;
+		$('.msg span').text(total);
+		$('.msg1 span').text(wc);
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

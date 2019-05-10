@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title>CSS Intro</title>
+</head>
+<body>
+<style>
+*{
+	padding: 0px;
+	margin: 0px;
+}
+div{
+	box-sizing:border-box;
+	float: left;
+}
+.main{
+	background: skyblue;
+	width: 100%;
+	height: 600px;
+}
+.inner{
+	width:60%;
+	margin:0px auto;
+	float: none;
+	height:100px;
+}
+.logo_area{
+	width:100px;
+	/*background: blue;*/
+	height: 50px;
+	line-height:50px;
+}
+.nav{
+	width:350px;
+	/*background: red;*/
+	float: right;
+}
+.nav ul li{
+	list-style:none;
+	float: left;
+	margin-top:20px;
+}
+.nav ul li a{
+	padding:15px;
+	color: blue;
+	text-decoration:none;
+	font-size: 16px;
+}
+.nav ul li a.login{
+	background: lightgray;
+	color: black
+}
+.nav ul li a.login:hover{
+	background: white;
+	color: black
+}
+.nav ul li a:hover{
+	color: white;
+}
+.form_area{
+	height: 300px;
+}
+.left_side{
+	width:50%;
+	float: left;
+}
+.left_side h1{
+	color: white;
+	font-size:30px;
+	text-align:left;
+}
+.left_side p{
+	color: black;
+	text-align:left;
+}
+.right_side{
+	width:40%;
+	float: right;
+}
+.form_box{
+	background: white;
+	padding:20px;
+}
+.form_inp{
+	width:100%;
+	margin-bottom:10px;
+	border: 1px solid red;
+	height: 45px;
+	padding-left: 20px;
+}
+.form_submit{
+	background: skyblue;
+	height: 45px;
+	width:49%;
+	color: white;
+	border:none;
+	/*margin-bottom: 10px;*/
+}
+.form_submit:hover{
+	background: black;
+	color: white;
+	border:1px solid red;
+}
+</style>
+<div class="main">
+	<div class="inner">
+		<div class="logo_area">It's Logo</div>
+		<div class="nav">
+			<ul>
+				<li><a href="">about</a></li>
+				<li><a href="">about</a></li>
+				<li><a href="">about</a></li>
+				<li><a href="">about</a></li>
+				<li><a href="" class="login">Login</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="inner form_area">
+		<div class="left_side">
+			<h1>Lorem ipsum dolor sit amet</h1>
+			<p>, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+		</div>
+		<div class="right_side">
+			<div class="form_box">
+				<form>
+					<input type="text" class="form_inp" placeholder="Please Enter Here">
+					<input type="text" class="form_inp" placeholder="Please Enter Here">
+					<input type="text" class="form_inp" placeholder="Please Enter Here">
+					<input type="text" class="form_inp" placeholder="Please Enter Here">
+					<input type="submit" class="form_submit">
+					<input type="submit" class="form_submit">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

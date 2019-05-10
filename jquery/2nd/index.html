@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Intro</title>
+</head>
+<body>
+<style>
+.box{
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin-top: 20px;
+	float: right;
+}
+.opt{
+	width:200px;
+	height: 200px;
+	background: green;
+	float: right;
+	color: #fff;
+}
+</style>
+<button class="u">up</button>
+<button class="d">Down</button>
+<button class="ud">Up/Down</button>
+<button class="gh">get html</button>
+<button class="ph">put html</button>
+<button class="gt">Get Text</button>
+<button class="pt">Put Text</button>
+<div class="box">
+	<h1>Test Heading</h1>
+	<p>Test Description</p>
+</div>
+<div class="opt"></div>
+<script src="jquery.js"></script>
+<script>
+	$('.u').click(function(){
+		$('.box').slideUp();
+	});
+	$('.d').click(function(){
+		$('.box').slideDown();
+	});
+	$('.ud').click(function(){
+		$('.box').slideToggle();
+	});
+	$('.gh').click(function(){
+		alert($('.box').html());
+	});
+	$('.ph').click(function(){
+		$('.opt').html('<h1>test</h1>test');
+	$('.gt').click(function(){
+		alert($('.box').text());
+	});
+	$('.pt').click(function(){
+		$('.opt').text('test');
+		$('.box').text(' ');
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

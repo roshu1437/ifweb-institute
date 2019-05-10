@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D Animations</title>
+<style>
+.main{
+	perspective:1600px;
+	background: #f5f5f4;
+}
+.box{
+	width:300px;
+	height: 150px;
+	line-height:150px;
+	color: #fff;
+	font-size: 20px;
+	background:#000;
+	margin:0px auto;
+	text-align:center;
+	text-transform: uppercase;
+	animation-name:move;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	animation-play-state:paused;
+}
+.box:hover{
+	animation-play-state:running;
+}
+@keyframes move{
+	from{
+		/*transform: rotateX(0deg);*/
+		transform: rotateY(0deg);
+	}
+	to{
+		/*transform: rotateX(360deg);*/
+		transform: rotateY(360deg);
+	}
+}
+</style>
+</head>
+<body>
+<div class="main">
+	<div class="box">Lorem ipsum dolor sit amet</div>
+</div>
+</body>
+</html>

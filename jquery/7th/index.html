@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Intro</title>
+</head>
+<body>
+<style>
+.box{
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin-top: 20px;
+	float: right;
+}
+.green{
+	background:green;
+}
+</style>
+<input type="password" placeholder="user password" id="pass">
+<div class="box green">test</div>
+<div class="hs">Show Password</div>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+
+	$('.hs').click(function(){
+		$('#pass').toggleClass('act');
+		if($('#pass').hasClass('act')){
+			$('#pass').attr('type','text');
+			$('.hs').text('Hide Password');
+		}else{
+			$('.hs').text('Show Password');
+			$('#pass').attr('type','password');
+			// alert('wrong');
+		}
+		// alert('test');
+		console.log('test');
+		// $('.box').addClass('green');
+		// $('.box').removeClass('green');
+		// $('.box').toggleClass('green');
+	});
+	
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

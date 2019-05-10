@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Intro</title>
+</head>
+<body>
+<style>
+.box{
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	margin-top: 20px;
+	float: right;
+	display: none;
+}
+</style>
+<input type="text" id="user" placeholder="user name here">
+<input type="password" placeholder="password 1" id="p1">
+<input type="password" placeholder="password 2" id="p2">
+<input type="color" id="color">
+<div class="msg"></div>
+<div class="box">
+	
+</div>
+<button id="get">Check Code</button>
+<script src="jquery.js"></script>
+<script>
+	$('#get').click(function(){
+		var user = $('#user').val();
+		var p1= $('#p1').val();
+		var p2 = $('#p2').val();
+
+		// if($('#p1').val()==$('#p2').val())
+		// if(p1==p2)
+		if(p1==p2){
+			alert('password ok');
+		}else{
+			$('.msg').text('Password Wrong');
+			$('.msg').css('color','red');
+		}
+
+
+
+		// assigne -> =
+		// equle -> ==
+		// notequle -> !=
+		// if(condition){true status}else{false status}
+		// if(user =='ali'){
+		// 	alert('Ok');
+		// }else{
+		// 	alert('Not Ok');
+		// }
+		// if(user !='ali'){
+		// 	alert('Ok');
+		// }else{
+		// 	alert('Not Ok');
+		// }
+		// alert(user);
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
