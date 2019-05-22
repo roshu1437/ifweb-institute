@@ -1,0 +1,67 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+div{
+	float: left;
+	box-sizing: border-box;
+}
+.main_bg{
+    width: 100%;
+    height: 750px;
+    background: url(../assets/bg.jpg);
+    background-size: cover;
+}
+.banner_box{
+    width: 625px;
+    position: relative;
+    top: 200px;
+    left: 270px;
+}
+.banner_box .shor_title{
+    width: 100%;
+    text-align: center;
+    color: #383838;
+    font-size: 18px;
+}
+.banner_box .title{
+    color: #383838;
+    font-size: 64px;
+}
+.banner_box .mark{
+    width: 100%;
+    background: #000;
+    color: #e4e4e4;
+    padding: 5px 15px;
+    font-size: 19px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.banner_box .copy_right{
+    width: 100%;
+    margin-top: 20px;
+}
+.banner_box .copy_right .border{
+    width: 130px;
+    border: 1px solid #f0f0f0;
+    height: 4px;
+    border-left: none;
+    border-right: none;
+}
+.banner_box .copy_right .border.right{
+    float: right;   
+}
+.banner_box .copy_right .icon{}
+.banner_box .copy_right span{
+    font-size: 26px;
+    color: #00a99d;
+    position: relative;
+    top: -12px;
+    left: 18px;
+}
+.banner_box .copy_right samp{
+    font-size: 26px;
+    position: relative;
+    top: -12px;
+    left: 24px;
+}
