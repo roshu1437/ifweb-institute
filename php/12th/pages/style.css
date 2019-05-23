@@ -6,6 +6,18 @@ div{
 	float: left;
 	box-sizing: border-box;
 }
+.c{
+    width: 200px;
+    height: 200px;
+    margin:0px auto;
+    float:none;
+    border:3px solid #D33232;   
+    border-radius: 100px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    transform: rotate(530deg);
+}
 .main_bg{
     width: 100%;
     height: 750px;
@@ -51,7 +63,6 @@ div{
 .banner_box .copy_right .border.right{
     float: right;   
 }
-.banner_box .copy_right .icon{}
 .banner_box .copy_right span{
     font-size: 26px;
     color: #00a99d;
@@ -64,4 +75,24 @@ div{
     position: relative;
     top: -12px;
     left: 24px;
+}
+@media only screen and (max-width:840px){
+    .banner_box{
+        margin:0px auto;
+        float:none;
+        left:0px;
+    }
+}
+@media only screen and (max-width:480px){
+    .banner_box{
+        width:90%;
+    }
+    .banner_box .copy_right .border{width:70px;}
+}
+@media only screen and (max-width:320px){
+    .banner_box .title{font-size:30px;}
+    .banner_box .mark{font-size:15px;}
+    .banner_box .copy_right .border{width:100%;border-color:#fff}
+    .main_bg .banner_box .copy_right *{top:0px;}
+    /*.banner_box .copy_right samp{top:0px;}*/
 }

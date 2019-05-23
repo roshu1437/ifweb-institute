@@ -1,3 +1,4 @@
+<!-- <div class="c"></div> -->
 <div class="main_bg">
 	<div class="banner_box">
 		<div class="shor_title">LOREM IPSUM DOLOR SIT AMET</div>
