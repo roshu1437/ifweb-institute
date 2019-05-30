@@ -31,6 +31,9 @@
 $(document).ready(function(){
 	$(".dropdown-trigger").dropdown();
 	$('.sidenav').sidenav();
+	$('.modal').modal();
+	$('.tabs').tabs();
+	$('#first_name,#last_name').characterCounter();
 	$('.materialboxed').materialbox();
 });
 </script>
