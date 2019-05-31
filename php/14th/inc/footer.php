@@ -33,7 +33,25 @@ $(document).ready(function(){
 	$('.sidenav').sidenav();
 	$('.modal').modal();
 	$('.tabs').tabs();
+	$('.collapsible').collapsible();
+	// $('.carousel').carousel();
+	$('.carousel.carousel-slider').carousel({
+    	fullWidth: true,
+    	indicators:true,
+    	padding:40,
+    	duration:1000,
+    	noWrap:true
+  	});
+  	$('.left_slide').click(function(){
+  		$('.carousel').carousel('prev');
+  	});
+  	$('.right_slide').click(function(){
+  		$('.carousel').carousel('next');
+  	});
+  	setInterval(function(){ 
+  		 $('.carousel').carousel('next');
+  	},3000);
 	$('#first_name,#last_name').characterCounter();
-	$('.materialboxed').materialbox();
+	$('.materialboxed,.carousel-item img').materialbox();
 });
 </script>
