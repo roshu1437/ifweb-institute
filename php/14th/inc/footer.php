@@ -34,7 +34,6 @@ $(document).ready(function(){
 	$('.modal').modal();
 	$('.tabs').tabs();
 	$('.collapsible').collapsible();
-	// $('.carousel').carousel();
 	$('.carousel.carousel-slider').carousel({
     	fullWidth: true,
     	indicators:true,
