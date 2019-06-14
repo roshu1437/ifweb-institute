@@ -4,32 +4,20 @@
 	if(!$db){
 		echo 'Somthing went wrong';
 	}
-	// for($i=0; $i < 20; $i++) { 
-	// 	if($i==5){
-	// 		// echo 'test';
-	// 		// continue;
-	// 		// die;
-	// 	}
-	// 	echo $i.'<br>';
-	// }
-	$t='ali';
-	$a='ali';
-	switch($t) {
-		case 'ali':
-			echo 'done';
-			break;
-		case 'test':
-			echo 'done 2';
-			break;
-		case 'test3':
-			echo 'done 3';
-			break;
-		default:
-			echo 'not match';
-			break;
+	// insert query in sql
+	$q='
+		INSERT INTO user SET
+		rollnumber="3",
+		email="test@gmail.com",
+		password="123456789"
+	';
+	for ($i=0; $i < 11; $i++) { 
+		$qr=mysqli_query($db,$q);
 	}
-
-
-
+	if($qr){
+		echo 'Data inserted';
+	}else{
+		echo 'Data Not inserted';
+	}
 
 ?>
