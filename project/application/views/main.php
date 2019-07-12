@@ -4,12 +4,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?=$t?></title>
+	<title><?=$title?></title>
+	<!-- link css files file -->
+	<?php include('inc/header-files.php')?>
 </head>
 <body>
+	<!-- link header file -->
+	<?php include('inc/header.php')?>
+	<!-- link open page file -->
 	<?php include('pages/'.$page.'.php')?>
-	<h1><a href="<?=base_url()?>">Home</a></h1>
-	<h1><a href="<?=base_url('about')?>">About</a></h1>
-	<h1><a href="<?=base_url('contact')?>">contact</a></h1>
+	<!-- link footer and js code file -->
+	<?php include('inc/footer.php')?>
 </body>
 </html>

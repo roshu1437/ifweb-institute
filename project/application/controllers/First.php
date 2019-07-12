@@ -1,23 +1,23 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
-
+class First extends CI_Controller {
 	public function index(){
-		// $test='ali';
-		// $data = array('test' =>'ali');
 		$data['page']='home';
-		$data['t']='home page';
+		$data['title']='Home Page';
+		$data['home']='active';
 		$this->load->view('main',$data);
 	}
 	public function about(){
-		$data['t']='about page';
+		$data['about']='active';
 		$data['page']='about';
+		$data['title']='Home Page';
 		$this->load->view('main',$data);
 	}
 	public function contact(){
-		$data['t']='contact page';
+		$data['contact']='active';
 		$data['page']='contact';
+		$data['title']='Home Page';
 		$this->load->view('main',$data);
 	}
 }
