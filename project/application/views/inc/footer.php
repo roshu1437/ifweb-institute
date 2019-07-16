@@ -4,5 +4,9 @@
 <script>
 $(document).ready(function(){
 	$(".dropdown-trigger").dropdown();
+    $('.materialboxed').materialbox();
+    $('.modal').modal();
+    $('.tabs').tabs();
+    $('[type="password"]').characterCounter();
 })
 </script>

@@ -14,6 +14,11 @@ class First extends CI_Controller {
 		$data['title']='Home Page';
 		$this->load->view('main',$data);
 	}
+	public function detail(){
+		$data['page']='detail';
+		$data['title']='Product Detail Page';
+		$this->load->view('main',$data);	
+	}
 	public function contact(){
 		$data['contact']='active';
 		$data['page']='contact';
