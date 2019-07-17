@@ -70,32 +70,32 @@
           <form class="col s12" action="<?=base_url('user')?>" method="post">
             <div class="row">
               <div class="input-field col s6">
-                <input id="signup_first_name" type="text" class="validate">
+                <input id="signup_first_name" type="text" class="validate" name="signup_fn">
                 <label for="signup_first_name">First Name</label>
               </div>
               <div class="input-field col s6">
-                <input id="signup_last_name" type="text" class="validate">
+                <input name="signup_ln" id="signup_last_name" type="text" class="validate">
                 <label for="signup_last_name">Last Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="signup_email" type="email" class="validate">
+                <input name="signup_email" id="signup_email" type="email" class="validate">
                 <label for="signup_email">Enter Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s6">
-                <input id="signup_password" type="password" class="validate"  data-length="10">
+                <input name="signup_pass" id="signup_password" type="password" class="validate"  data-length="10">
                 <label for="signup_password">Enter Password</label>
               </div>
               <div class="input-field col s6">
-                <input id="signup_re_password" type="password" class="validate" data-length="10">
+                <input name="signup_cpass" id="signup_re_password" type="password" class="validate" data-length="10">
                 <label for="signup_re_password">Confirm Password</label>
               </div>
             </div>
             <div class="center-align">
-              <input type="submit" class="waves-effect waves-light btn" value="signup">
+              <input name="signup_submit" type="submit" class="waves-effect waves-light btn" value="signup">
             </div>
           </form>
         </div>

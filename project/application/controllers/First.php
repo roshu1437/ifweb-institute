@@ -25,4 +25,10 @@ class First extends CI_Controller {
 		$data['title']='Home Page';
 		$this->load->view('main',$data);
 	}
+	public function user(){
+		$this->load->model('User');
+		if(isset($_POST['signup_submit'])){
+			$this->User->user_signup();
+		}
+	}
 }
