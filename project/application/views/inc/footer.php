@@ -8,5 +8,8 @@ $(document).ready(function(){
     $('.modal').modal();
     $('.tabs').tabs();
     $('[type="password"]').characterCounter();
+    <?php if(isset($this->session->msg)){ ?>
+    	M.toast({html: '<?=$this->session->msg?>', classes: 'rounded  teal darken-4'});
+    <?php } ?>
 })
 </script>

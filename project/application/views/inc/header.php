@@ -104,4 +104,12 @@
   </div>
 </div>
 
+<?php 
+
+echo $this->session->msg;
+
+// echo "<pre>";print_r($_SESSION['msg']);echo "</pre>";
+// session_destroy();
+?>
+
         
