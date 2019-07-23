@@ -18,8 +18,12 @@
       <li class="<?=@$contact?>">
         <a href="<?=base_url('contact')?>">Contact</a>
       </li>
-      <li class="<?=@$contact?>">
-        <a class="modal-trigger" href="#login_or_signup">Login & SignUp</a>
+      <li>
+        <?php if(isset($this->session->login)){ ?>
+          <a href="<?=base_url('logout')?>">Logout</a>
+        <?php }else{ ?>
+          <a class="modal-trigger" href="#login_or_signup">Login & SignUp</a>
+        <?php } ?>
       </li>
       <!-- Dropdown Trigger -->
       <li>
@@ -51,16 +55,16 @@
         <form class="col s12" action="<?=base_url('user')?>" method="post">
           <div class="row">
             <div class="input-field col s12">
-              <input id="login_email" type="text" class="validate">
+              <input id="login_email" name="login_email" type="text" class="validate">
               <label for="login_email">Enter Email</label>
             </div>
             <div class="input-field col s12">
-              <input id="login_password" type="password" class="validate">
+              <input id="login_password" name="login_pass" type="password" class="validate">
               <label for="login_password">Enter Password</label>
             </div>
           </div>
           <div class="center-align">
-            <input type="submit" class="waves-effect waves-light btn" value="Login">
+            <input type="submit" name="login_submit" class="waves-effect waves-light btn" value="Login">
           </div>
         </form>
       </div>

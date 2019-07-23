@@ -31,5 +31,9 @@ class First extends CI_Controller {
 			$this->User->user_signup();
 			redirect(base_url());
 		}
+		if(isset($_POST['login_submit'])){
+			$this->User->user_login();
+			redirect(base_url());
+		}
 	}
 }
