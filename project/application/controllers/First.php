@@ -36,4 +36,8 @@ class First extends CI_Controller {
 			redirect(base_url());
 		}
 	}
+	public function logout(){
+		$this->session->unset_userdata('login');
+		redirect(base_url());
+	}
 }
