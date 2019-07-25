@@ -10,12 +10,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 	<!-- link header file -->
-	<?php include('inc/header.php')?>
+	<?php include('admin/header.php')?>
 	<div class="row">
-		<div class="col s12 m3 l3">
+		<div class="col s12 m4 l4">
 			<?php include('admin/sidebar.php')?>
 		</div>
-		<div class="col s12 m9 l9">
+		<div class="col s12 m8 l8">
 			<!-- link open page file -->
 			<?php include('admin/'.$page.'.php')?>
 		</div>

@@ -57,5 +57,6 @@ $route['user'] = 'First/user';
 $route['logout'] = 'First/logout';
 $route['admin'] = 'Admin';
 $route['admin-login'] = 'Admin/login';
+$route['admin/user'] = 'Admin/user';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
