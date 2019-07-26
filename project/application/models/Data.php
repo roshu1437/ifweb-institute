@@ -8,7 +8,6 @@ class Data extends CI_Model {
 		}
 	}
 	function login(){
-		// echo "<pre>";print_r($_POST);die('die');echo "</pre>";
 		if(!empty($_POST['admin_email']) && !empty($_POST['admin_pass'])){
 			$data_array=array(
 				'email'=>$_POST['admin_email'],
@@ -31,6 +30,22 @@ class Data extends CI_Model {
 		$this->db->where('active',0);
 		$g=$this->db->get('user');
 		return $g->num_rows();
+	}
+	function get_user(){
+		$g=$this->db->get('user');
+		return $g->result_array();
+	}
+	function user_active(){
+		$data_array = array('active' =>1);
+		$this->db->where('id',$_GET['ac']);
+		$this->db->update('user',$data_array);
+		redirect('admin/user');
+	}
+	function user_deactive(){
+		$data_array = array('active' =>0);
+		$this->db->where('id',$_GET['dac']);
+		$this->db->update('user',$data_array);
+		redirect('admin/user');
 	}
 
 }	

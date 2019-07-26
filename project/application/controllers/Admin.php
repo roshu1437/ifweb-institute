@@ -18,12 +18,23 @@ class Admin extends CI_Controller {
 		if(isset($this->session->admin)){
 			redirect(base_url('admin'));
 		}
+		if(isset($_POST['admin_login'])){
+			$c=$this->data->login();
+		}		
 		$data['title']='Admin Home';
 		$data['page']='login';
 		$this->load->view('admin',$data);
 	}
 	public function user(){
 		$this->data->check_login();
+		if(isset($_GET['ac'])){
+			$this->data->user_active();
+		}
+		if(isset($_GET['dac'])){
+			$this->data->user_deactive();
+		}
+
+		$data['users']=$this->data->get_user();
 		$data['title']='Active user';
 		$data['page']='user';
 		$this->load->view('admin',$data);	
