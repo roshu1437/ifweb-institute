@@ -6,6 +6,7 @@ $(document).ready(function(){
 	$(".dropdown-trigger").dropdown();
     $('.materialboxed').materialbox();
     $('.modal').modal();
+    $('select').formSelect();
     $('.tabs').tabs();
     $('[type="password"]').characterCounter();
     <?php if(isset($this->session->msg)){ ?>

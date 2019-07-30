@@ -37,6 +37,14 @@ class Admin extends CI_Controller {
 		$data['users']=$this->data->get_user();
 		$data['title']='Active user';
 		$data['page']='user';
+		$this->load->view('admin',$data);
+	}
+	public function add_cat(){
+		if(isset($_POST['add_cat'])){
+			$this->data->add_cat();
+		}
+		$data['title']='Add Category';
+		$data['page']='add_cat';
 		$this->load->view('admin',$data);	
 	}
 }

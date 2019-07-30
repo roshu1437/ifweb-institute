@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 class User extends CI_Model {
 	function user_signup(){
 		if(
@@ -62,4 +61,32 @@ class User extends CI_Model {
 			$this->session->set_flashdata('msg','Please Fill All the Fields');
 		}
 	}
-}	
+	function pro_add(){
+		if(!empty($_POST['pro_title']) && !empty($_POST['pro_price']) && !empty($_FILES['pro_img']['name'])){
+			$data_array = array();
+			$data_array['name']='';
+			foreach($_FILES['pro_img']['name'] as $k => $v){
+				$name=time().$_FILES['pro_img']['name'][$k];
+				$temp_name=$_FILES['pro_img']['tmp_name'][$k];
+				$move=move_uploaded_file($temp_name,'product/'.$name);
+				if($move){
+					$data_array['name'].=$name.'@';
+				}
+			}
+
+			echo "<pre>";print_r($data_array);die('die');echo "</pre>";
+
+
+		}else{
+			$this->session->set_flashdata('msg','Please Fill All the Fields');
+			return false;
+		}
+		echo "<pre>";print_r($_FILES);echo "</pre>";
+		echo "<pre>";print_r($_POST);die;echo "</pre>";
+	}
+	function get_cat(){
+		$this->db->where('cat_status','1');
+		$g=$this->db->get('category')->result();
+		return $g;
+	}
+}

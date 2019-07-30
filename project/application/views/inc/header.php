@@ -18,6 +18,11 @@
       <li class="<?=@$contact?>">
         <a href="<?=base_url('contact')?>">Contact</a>
       </li>
+      <?php if(isset($this->session->login)){ ?>
+      <li class="<?=@$add_product?>">
+        <a href="<?=base_url('add_product')?>">Add Product</a>
+      </li>
+    <?php } ?>
       <li>
         <?php if(isset($this->session->login)){ ?>
           <a href="<?=base_url('logout')?>">Logout</a>

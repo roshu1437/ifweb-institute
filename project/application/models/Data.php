@@ -47,5 +47,25 @@ class Data extends CI_Model {
 		$this->db->update('user',$data_array);
 		redirect('admin/user');
 	}
+	function add_cat(){
+		if(!empty($_POST['cat_name'])){
+			$n=$_POST['cat_name'];
+			$this->db->where('cat_name',$n);
+			$g=$this->db->get('category');
+			if($g->num_rows() > 0){
+				msg('already');
+				return false;
+			}
+			$data_array=array('cat_name'=>$n);
+			$ins=$this->db->insert('category',$data_array);
+			if($ins){
+				msg('add');
+			}else{
+				msg('ta');
+			}
+		}else{
+			msg('ae');
+		}
+	}
 
 }	

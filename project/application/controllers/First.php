@@ -41,4 +41,18 @@ class First extends CI_Controller {
 		$this->session->unset_userdata('admin');
 		redirect(base_url());
 	}
+	public function add_product(){
+		if(!isset($this->session->login)){
+			redirect(base_url());
+		}
+		$this->load->model('User');
+		if(isset($_POST['pro_submit'])){
+			$this->User->pro_add();
+		}
+		$data['categories']=$this->User->get_cat();
+		$data['add_product']='active';
+		$data['page']='add_product';
+		$data['title']='Product Add Page';
+		$this->load->view('main',$data);
+	}
 }
