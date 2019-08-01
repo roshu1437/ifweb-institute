@@ -60,5 +60,6 @@ $route['admin'] = 'Admin';
 $route['admin-login'] = 'Admin/login';
 $route['admin/user'] = 'Admin/user';
 $route['admin/add_cat'] = 'Admin/add_cat';
+$route['admin/products_status'] = 'Admin/products_status';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

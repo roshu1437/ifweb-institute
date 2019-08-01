@@ -39,6 +39,19 @@ class Admin extends CI_Controller {
 		$data['page']='user';
 		$this->load->view('admin',$data);
 	}
+	public function products_status(){
+		$this->data->check_login();
+		if(isset($_GET['ac'])){
+			$this->data->product_active();
+		}
+		if(isset($_GET['dac'])){
+			$this->data->product_deactive();
+		}
+		$data['products']=$this->data->products_status();
+		$data['title']='Active user';
+		$data['page']='products_status';
+		$this->load->view('admin',$data);
+	}
 	public function add_cat(){
 		if(isset($_POST['add_cat'])){
 			$this->data->add_cat();

@@ -63,26 +63,36 @@ class User extends CI_Model {
 	}
 	function pro_add(){
 		if(!empty($_POST['pro_title']) && !empty($_POST['pro_price']) && !empty($_FILES['pro_img']['name'])){
-			$data_array = array();
-			$data_array['name']='';
+			$data_array = array(
+				'pro_title'=>$_POST['pro_title'],
+				'pro_brand'=>$_POST['pro_brand'],
+				'pro_qty'=>$_POST['pro_qty'],
+				'pro_price'=>$_POST['pro_price'],
+				'pro_user'=>$this->session->login,
+				'pro_cat'=>$_POST['pro_cat'],
+				'pro_desc'=>$_POST['pro_desc']
+			);
+			$data_array['pro_img']='';
 			foreach($_FILES['pro_img']['name'] as $k => $v){
 				$name=time().$_FILES['pro_img']['name'][$k];
 				$temp_name=$_FILES['pro_img']['tmp_name'][$k];
 				$move=move_uploaded_file($temp_name,'product/'.$name);
 				if($move){
-					$data_array['name'].=$name.'@';
+					$data_array['pro_img'].=$name.'@';
 				}
 			}
-
-			echo "<pre>";print_r($data_array);die('die');echo "</pre>";
-
-
+			$ins=$this->db->insert('product',$data_array);
+			if($ins){
+				msg('add');
+				redirect(base_url('add_product'));
+			}else{
+				msg('ta');
+				return false;
+			}
 		}else{
-			$this->session->set_flashdata('msg','Please Fill All the Fields');
+			msg('ae');
 			return false;
 		}
-		echo "<pre>";print_r($_FILES);echo "</pre>";
-		echo "<pre>";print_r($_POST);die;echo "</pre>";
 	}
 	function get_cat(){
 		$this->db->where('cat_status','1');

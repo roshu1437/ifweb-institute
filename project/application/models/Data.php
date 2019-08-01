@@ -31,8 +31,17 @@ class Data extends CI_Model {
 		$g=$this->db->get('user');
 		return $g->num_rows();
 	}
+	function get_pending_products(){
+		$this->db->where('pro_status',0);
+		$g=$this->db->get('product');
+		return $g->num_rows();
+	}
 	function get_user(){
 		$g=$this->db->get('user');
+		return $g->result_array();
+	}
+	function products_status(){
+		$g=$this->db->get('product');
 		return $g->result_array();
 	}
 	function user_active(){
@@ -46,6 +55,18 @@ class Data extends CI_Model {
 		$this->db->where('id',$_GET['dac']);
 		$this->db->update('user',$data_array);
 		redirect('admin/user');
+	}
+	function product_active(){
+		$data_array = array('pro_status' =>1);
+		$this->db->where('pro_id',$_GET['ac']);
+		$this->db->update('product',$data_array);
+		redirect('admin/products_status');
+	}
+	function product_deactive(){
+		$data_array = array('pro_status' =>0);
+		$this->db->where('pro_id',$_GET['dac']);
+		$this->db->update('product',$data_array);
+		redirect('admin/products_status');
 	}
 	function add_cat(){
 		if(!empty($_POST['cat_name'])){
