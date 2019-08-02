@@ -29,11 +29,14 @@
           foreach ($products as $product) {
             if($product['pro_status']==0){ ?>
               <tr>
-                <td><?=$product['pro_user']?></td>
+                <td><?=$product['first_name'].' '.$product['last_name']?></td>
                 <td><?=$product['pro_title']?></td>
-                <td></td>
+                <td>
+                  <?php $img=explode('@',$product['pro_img'])[0]; ?>
+                  <img src="<?=base_url('product/').$img?>" alt="image of products" style="width:50px;border:1px solid #ccc">
+                </td>
                 <td><?=$product['pro_desc']?></td>
-                <td><?=$product['pro_cat']?></td>
+                <td><?=$product['cat_name']?></td>
                 <td><?=$product['pro_brand']?></td>
                 <td>pending</td>
                 <td>
@@ -65,11 +68,14 @@
           foreach ($products as $product) {
             if($product['pro_status']==1){ ?>
               <tr>
-                <td><?=$product['pro_user']?></td>
+                <td><?=$product['first_name'].' '.$product['last_name']?></td>
                 <td><?=$product['pro_title']?></td>
-                <td></td>
+                <td>
+                  <?php $img=explode('@',$product['pro_img'])[0]; ?>
+                  <img src="<?=base_url('product/').$img?>" alt="image of products" style="width:50px;border:1px solid #ccc">
+                </td>
                 <td><?=$product['pro_desc']?></td>
-                <td><?=$product['pro_cat']?></td>
+                <td><?=$product['cat_name']?></td>
                 <td><?=$product['pro_brand']?></td>
                 <td>Active</td>
                 <td>

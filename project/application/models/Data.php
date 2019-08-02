@@ -41,7 +41,15 @@ class Data extends CI_Model {
 		return $g->result_array();
 	}
 	function products_status(){
+		// $this->db->join('joining table','condition','method');
+		$this->db->join('category','product.pro_cat=category.cat_id','left');
+		$this->db->join('user','product.pro_user=user.user_id','left');
 		$g=$this->db->get('product');
+		// $g2=$g->row();
+		// $t=explode('@',$g2->pro_img)[0];
+		// echo "<pre>";print_r($t);die('die');echo "</pre>";
+		// echo $g2->pro_img;
+		// echo "<pre>";print_r($g->result_array());die('die');echo "</pre>";
 		return $g->result_array();
 	}
 	function user_active(){

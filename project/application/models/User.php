@@ -50,7 +50,7 @@ class User extends CI_Model {
 			$get=$this->db->get('user')->row();
 			if($get){
 				if($get->active == 1){
-					$this->session->set_userdata('login',$get->id);
+					$this->session->set_userdata('login',$get->user_id);
 				}else{
 					$this->session->set_flashdata('msg','Your Account is not active');
 				}
