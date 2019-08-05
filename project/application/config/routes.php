@@ -56,6 +56,7 @@ $route['detail'] = 'First/detail';
 $route['user'] = 'First/user';
 $route['add_product'] = 'First/add_product';
 $route['logout'] = 'First/logout';
+$route['product-detail'] = 'First/product_detail';
 $route['admin'] = 'Admin';
 $route['admin-login'] = 'Admin/login';
 $route['admin/user'] = 'Admin/user';

@@ -99,4 +99,20 @@ class User extends CI_Model {
 		$g=$this->db->get('category')->result();
 		return $g;
 	}
+	function get_products(){
+		$this->db->where('pro_status','1');
+		$g=$this->db->get('product');
+		return $g;
+	}
+	function product(){
+		$this->db->join('category','product.pro_cat=category.cat_id','left');
+		$this->db->join('user','product.pro_user=user.user_id','left');
+		$this->db->where('product.pro_id',$_GET['product']);
+		$g=$this->db->get('product');
+		if($g->num_rows() > 0){
+			return $g;
+		}else{
+			redirect(base_url());
+		}
+	}
 }

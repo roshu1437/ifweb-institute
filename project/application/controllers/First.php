@@ -2,7 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class First extends CI_Controller {
+	function __construct() {
+        parent::__construct();
+		$this->load->model('user');
+    }
 	public function index(){
+		$data['products']=$this->user->get_products()->result_array();
 		$data['page']='home';
 		$data['title']='Home Page';
 		$data['home']='active';
@@ -26,13 +31,12 @@ class First extends CI_Controller {
 		$this->load->view('main',$data);
 	}
 	public function user(){
-		$this->load->model('User');
 		if(isset($_POST['signup_submit'])){
-			$this->User->user_signup();
+			$this->user->user_signup();
 			redirect(base_url());
 		}
 		if(isset($_POST['login_submit'])){
-			$this->User->user_login();
+			$this->user->user_login();
 			redirect(base_url());
 		}
 	}
@@ -45,14 +49,25 @@ class First extends CI_Controller {
 		if(!isset($this->session->login)){
 			redirect(base_url());
 		}
-		$this->load->model('User');
 		if(isset($_POST['pro_submit'])){
-			$this->User->pro_add();
+			$this->user->pro_add();
 		}
-		$data['categories']=$this->User->get_cat();
+		$data['categories']=$this->user->get_cat();
 		$data['add_product']='active';
 		$data['page']='add_product';
 		$data['title']='Product Add Page';
+		$this->load->view('main',$data);
+	}
+	public function product_detail(){
+		if(!isset($this->session->login)){
+			redirect(base_url());
+		}
+		if(!isset($_GET['product'])){
+			redirect(base_url());
+		}
+		$data['product']=$this->user->product()->result_array()[0];
+		$data['page']='detail';
+		$data['title']='Product Detail';
 		$this->load->view('main',$data);
 	}
 }
