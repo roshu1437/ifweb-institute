@@ -101,6 +101,7 @@ class User extends CI_Model {
 	}
 	function get_products(){
 		$this->db->where('pro_status','1');
+		$this->db->order_by('pro_id','DESC');
 		$g=$this->db->get('product');
 		return $g;
 	}

@@ -8,6 +8,7 @@ class First extends CI_Controller {
     }
 	public function index(){
 		$data['products']=$this->user->get_products()->result_array();
+		$data['cats']=$this->db->get('category')->result_array();
 		$data['page']='home';
 		$data['title']='Home Page';
 		$data['home']='active';

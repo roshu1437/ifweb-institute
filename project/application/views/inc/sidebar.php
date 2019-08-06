@@ -1,32 +1,31 @@
  <ul class="collection">
- 	<a href="" class="collection-item">Link item 1</a>
- 	<a href="" class="collection-item">Link item 2</a>
- 	<a href="" class="collection-item">Link item 3</a>
- 	<a href="" class="collection-item">Link item 4</a>
- 	<a href="" class="collection-item">Link item 5</a>
- 	<a href="" class="collection-item">Link item 6</a>
- 	<a href="" class="collection-item">Link item 7</a>
- 	<a href="" class="collection-item">Link item 8</a>
- 	<a href="" class="collection-item">Link item 9</a>
- 	<a href="" class="collection-item">Link item 10</a>
- 	<a href="" class="collection-item">Link item 11</a>
- 	<a href="" class="collection-item">Link item 12</a>
- 	<a href="" class="collection-item">Link item 13</a>
- 	<a href="" class="collection-item">Link item 14</a>
- 	<a href="" class="collection-item">Link item 15</a>
- 	<a href="" class="collection-item">Link item 16</a>
- 	<a href="" class="collection-item">Link item 17</a>
- 	<a href="" class="collection-item">Link item 18</a>
- 	<a href="" class="collection-item">Link item 19</a>
- 	<a href="" class="collection-item">Link item 20</a>
- 	<a href="" class="collection-item">Link item 21</a>
- 	<a href="" class="collection-item">Link item 22</a>
- 	<a href="" class="collection-item">Link item 23</a>
- 	<a href="" class="collection-item">Link item 24</a>
- 	<a href="" class="collection-item">Link item 25</a>
- 	<a href="" class="collection-item">Link item 26</a>
- 	<a href="" class="collection-item">Link item 27</a>
- 	<a href="" class="collection-item">Link item 28</a>
- 	<a href="" class="collection-item">Link item 29</a>
- 	<a href="" class="collection-item">Link item 30</a>
+ 	<div class="input-field">
+      <input id="search" type="search" class="validate">
+      <label for="search">Search Here</label>
+    </div>
+    <div class="clearfix"></div>
+    <div class="input-field col s12">
+	    <select id="cat_select">
+			<option value="" disabled selected>Search By Category</option>
+			<?php foreach($cats as $cat){ ?>
+				<option value="<?=$cat['cat_id']?>"><?=$cat['cat_name']?></option>
+			<?php }	?>
+		</select>
+  	</div>
+  	<li class="clearfix"></li>
+  	<?php //echo "<pre>";print_r($products);echo "</pre>"; ?>
+  	<?php 
+  		$side_counter=1;
+  		foreach($products as $sidebar){ ?>
+  			<a href="<?=base_url('product-detail?product=').$sidebar['pro_id'];?>" class="collection-item"><?=$sidebar['pro_title']?></a>
+  		<?php 
+  			if($side_counter > 4){
+  				break;
+  			}
+  			$side_counter++;
+  		?>
+  	<?php } ?>
 </ul>
+<form action="<?=base_url('product-search')?>" method="get" id="cat_form">
+	<input type="hidden" name="category" value="" id="cat_value">
+</form>
