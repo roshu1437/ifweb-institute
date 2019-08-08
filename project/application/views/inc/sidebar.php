@@ -1,7 +1,11 @@
  <ul class="collection">
- 	<div class="input-field">
+ 	  <div class="input-field">
       <input id="search" type="search" class="validate">
       <label for="search">Search Here</label>
+    </div>
+    <li class="clearfix"></li>
+    <div id="search_box">
+      <!-- <a href="" class="collection-item">Test</a> -->
     </div>
     <div class="clearfix"></div>
     <div class="input-field col s12">

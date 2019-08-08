@@ -19,5 +19,41 @@ $(document).ready(function(){
     	$('#cat_form').submit();
     });
 
+    // Search options
+    $('#search').keyup(function(){
+        var v=$(this).val();
+        if(v.length > 2){
+            $.ajax({
+                url:'<?=base_url('search')?>',
+                type:'post',
+                data:{'search':v},
+                dataType:'json',
+                success:function(d){
+                    $('#search_box').html('');
+                    $(d).each(function(){
+                        var html='<a href="<?=base_url('product-detail?product=')?>'+this.pro_id+'" class="collection-item">'+this.pro_title+'</a>';
+                        $('#search_box').append(html);
+                    });
+                }
+            });
+        }
+    });
 });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -82,4 +82,11 @@ class First extends CI_Controller {
 		$data['title']='Product Detail';
 		$this->load->view('main',$data);
 	}
+	public function search(){
+		if(!empty($_POST['search'])){
+			$this->db->like('pro_title',$_POST['search']);
+			$g=$this->db->get('product')->result_array();
+			echo json_encode($g);
+		}
+	}
 }
