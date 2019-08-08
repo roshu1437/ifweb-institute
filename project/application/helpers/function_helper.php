@@ -13,5 +13,9 @@ function msg($value){
 	$CI =& get_instance();
 	$CI->session->set_flashdata('msg',$msg);
 }
+function mr($value){
+	$CI =& get_instance();
+	$CI->session->set_flashdata('msg',$value);
 
+}
 ?>

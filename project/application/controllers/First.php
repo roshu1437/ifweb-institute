@@ -60,14 +60,25 @@ class First extends CI_Controller {
 		$this->load->view('main',$data);
 	}
 	public function product_detail(){
-		if(!isset($this->session->login)){
-			redirect(base_url());
-		}
 		if(!isset($_GET['product'])){
 			redirect(base_url());
 		}
+		$data['products']=$this->user->get_products()->result_array();
+		$data['cats']=$this->db->get('category')->result_array();
 		$data['product']=$this->user->product()->result_array()[0];
 		$data['page']='detail';
+		$data['title']='Product Detail';
+		$this->load->view('main',$data);
+	}
+	public function product_search(){
+		if(!isset($_POST['category'])){
+			redirect(base_url());
+		}
+		$this->db->where('pro_cat',$_POST['category']);
+		$data['cats_search']=$this->db->get('product')->result_array();
+		$data['products']=$this->user->get_products()->result_array();
+		$data['cats']=$this->db->get('category')->result_array();
+		$data['page']='cat_search';
 		$data['title']='Product Detail';
 		$this->load->view('main',$data);
 	}

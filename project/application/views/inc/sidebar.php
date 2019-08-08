@@ -26,6 +26,6 @@
   		?>
   	<?php } ?>
 </ul>
-<form action="<?=base_url('product-search')?>" method="get" id="cat_form">
+<form action="<?=base_url('product-search')?>" method="post" id="cat_form">
 	<input type="hidden" name="category" value="" id="cat_value">
 </form>
