@@ -29,8 +29,16 @@ class User extends CI_Model {
 			);
 			$ins=$this->db->insert('user',$data_array);
 			if($ins){
+				$html='<h1>PLease Click for acount confirmation</h1><a href="'.base_url('user-confirmation/').'?token='.$token.'">Click Here</a>';
+				// change with your email
+				$sender_email='splendidcoach@gmail.com';
+				// here
+				if(send_mail($sender_email,$_POST['signup_email'],'User Signup',$html)){
+					$this->session->set_userdata('msg','PLease Verified Your Email For Login');
+				}else{
+					$this->session->set_userdata('msg','PLease try Again');
+				}
 				return true;
-				$this->session->set_userdata('msg','PLease Verified Your Email For Login');
 			}else{
 				$this->session->set_userdata('msg','Pease Try Again');
 				return false;

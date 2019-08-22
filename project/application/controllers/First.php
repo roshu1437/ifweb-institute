@@ -86,7 +86,37 @@ class First extends CI_Controller {
 		if(!empty($_POST['search'])){
 			$this->db->like('pro_title',$_POST['search']);
 			$g=$this->db->get('product')->result_array();
+			// echo "<pre>";print_r($g);echo "</pre>";
 			echo json_encode($g);
 		}
 	}
+	public function confirm(){
+		if(!empty($_GET['token'])){
+			$data_array=array(
+				'user_token'=>'',
+				'active'=>'1'
+			);
+			$this->db->where('user_token',$_GET['token']);
+			$this->db->update('user',$data_array);
+			$this->session->set_flashdata('msg','Your Account Active');
+			redirect(base_url());
+		}	
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

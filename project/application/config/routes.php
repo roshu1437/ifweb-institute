@@ -54,6 +54,7 @@ $route['about'] = 'First/about';
 $route['contact'] = 'First/contact';
 $route['detail'] = 'First/detail';
 $route['user'] = 'First/user';
+$route['user-confirmation'] = 'First/confirm';
 $route['add_product'] = 'First/add_product';
 $route['logout'] = 'First/logout';
 $route['product-detail'] = 'First/product_detail';
