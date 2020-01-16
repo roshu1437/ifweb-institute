@@ -27,8 +27,19 @@ if(isset($_POST['u_signup'])){
 				msg('error','Please enter password between 4 to 20 charters',url('',true));
 				die;
 			}
+			// check already exist email
+			$q1='SELECT * FROM user WHERE email="'.$email.'"';
+			$q1r=mysqli_query($con,$q1);
+			if(!$q1r){
+				msg('error','Please Try After Some Time',url('',true));
+				die;
+			}
+			if(mysqli_num_rows($q1r) > 0){
+				msg('error','This Email Is Already Taken',url('',true));
+				die;
+			}
 			// make unique id
-			$token=md5(md5(time()+microtime()));
+			$token=md5(microtime());
 			//insert data
 			$q='
 				INSERT INTO user SET
@@ -49,13 +60,38 @@ if(isset($_POST['u_signup'])){
 				msg('error','Please Submit Values Again',url('',true));
 				die;
 			}
-
 		}else{
 			msg('error','Please Fill All The Fields',url('',true));
 			die;
 		}
 	}else{
 		msg('error','Please Accept Terms & Conditions',url('',true));
+	}
+}
+if(isset($_POST['u_login'])){
+	if(!empty($_POST['email']) && !empty($_POST['pass'])){
+		// store in variables
+		$email=$_POST['email'];
+		$pass=$_POST['pass'];
+		// check query
+		$q='SELECT * FROM user WHERE email="'.$email.'" and pass="'.md5($pass).'"';
+		$qr=mysqli_query($con,$q);
+		if(!$qr){
+			msg('error','Please login after sometime',url('',true));
+			die;
+		}
+		if(mysqli_num_rows($qr)==0){
+			msg('error','Email or Password Not Matched',url('',true));
+			die;
+		}
+		$record=mysqli_fetch_assoc($qr);
+		if($record['status']==0){
+			msg('error','Please Active Your Account First',url('',true));
+			die;
+		}
+	}else{
+		msg('error','Please Fill All The Field',url('',true));
+		die;
 	}
 }
 ?>
