@@ -1,0 +1,113 @@
+Rules:
+	Home
+		without login
+		recent 
+		search
+			location
+			price
+			seller
+			brands
+			new
+			used
+		hot selling 
+		recommended
+		trending 
+		slider
+		live chat
+		subscribes 
+		languages
+	about
+		content
+	contact us
+		map
+		mobile number
+		email
+		contact form
+	services
+		comments 
+		reviews
+		on demand  
+	products
+		filter
+		popular
+		most recent 
+		categories
+		date 
+		location
+	sign-up/login
+		form
+		date 
+		email verification 
+		not robot 
+		password generator 
+		location
+		forget password
+	add to cart
+		total products
+		ph number 
+	payment
+		local payments
+	coupons
+		valid code 
+	news/offers
+		new coupons
+		coming soon
+		trending
+		events
+		pre orders 
+	product add
+		seller name
+		brand 
+		price 
+		3 pics
+		description
+		location
+		number of products 
+		shipping price /time
+		product variations 
+			color
+			size
+		new or
+	product update
+		brand 
+		price 
+		3 pics
+		description
+		location
+		number of products 
+		shipping price /time
+		product variations 
+			color
+			size
+		new or used
+	product info
+		seller name
+		brand 
+		product variations 
+		location
+		reviews/ratting 
+		comments
+		relevant products
+		remaining products
+		sold products
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
