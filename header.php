@@ -40,22 +40,22 @@
           </ul>
         </div>
         <div id="login" class="col s12">
-          <form class="col s12">
+          <form class="col s12" action="<?=url('actions/signup.php')?>" method="post">
             <blockquote>Login Form</blockquote>
             <div class="row">
               <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
+                <input id="lemail" type="email" name="email" class="validate">
+                <label for="lemail">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
+                <input id="lpassword" type="password" name="pass" class="validate">
+                <label for="lpassword">Password</label>
               </div>
             </div>
             <div class="center-align">
-              <button class="btn waves-effect deep-orange-text waves-light" type="submit">Submit
+              <button name="u_login" class="btn waves-effect deep-orange-text waves-light" type="submit" value="u_login">Submit
                 <i class="material-icons right">send</i>
               </button>
             </div>
@@ -91,12 +91,14 @@
                 </div>
                 <div class="row">
                   <div class="input-field col s6">
-                    <input id="password" name="u_pass" type="password" class="validate">
-                    <label for="password">Password</label>
+                    <input id="password1" name="u_pass" type="password" class="validate" data-length="20">
+                    <label for="password1">Password</label>
+                    <i class="material-icons prefix show_pass">remove_red_eye</i>
                   </div>
                   <div class="input-field col s6">
-                    <input id="password" name="u_rpass" type="password" class="validate">
-                    <label for="password">Confirm Password</label>
+                    <input id="password2" name="u_rpass" type="password" class="validate" data-length="20">
+                    <label for="password2">Confirm Password</label>
+                    <i class="material-icons prefix" onclick="rp('15')">lock</i>
                   </div>
                 </div>
                 <div class="row">
