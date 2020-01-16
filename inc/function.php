@@ -11,4 +11,5 @@ function msg($type,$msg,$url){
 	$_SESSION[$type]=$msg;
 	header('Location: '.$url);
 }
+test
 ?>
