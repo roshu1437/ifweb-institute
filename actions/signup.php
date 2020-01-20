@@ -35,8 +35,8 @@ if(isset($_POST['u_signup'])){
 				die;
 			}
 			if(mysqli_num_rows($q1r) > 0){
-				msg('error','This Email Is Already Taken',url('',true));
-				die;
+				// msg('error','This Email Is Already Taken',url('',true));
+				// die;
 			}
 			// make unique id
 			$token=md5(microtime());
@@ -54,8 +54,17 @@ if(isset($_POST['u_signup'])){
 			';
 			$qr=mysqli_query($con,$q);
 			if($qr){
-				msg('done','Welcome To Submilyga Please Active Your Account First',url('',true));
-				die;
+				$html='<h1>Hi! '.$fn.' '.$ln.'</h1>';
+				$html.='<p>Please click link below for activate account.</p>';
+				$html.='<a href="'.url('actions/signup.php',true).'?code='.$token.'">Active</a>';
+				$mail_send=mail_send($email,'Account Verification',$html);
+				if($mail_send){
+					msg('done','Welcome To Submilyga Please Active Your Account First',url('',true));
+					die;
+				}else{
+					msg('error','SignUp Failed',url('',true));
+					die;
+				}
 			}else{
 				msg('error','Please Submit Values Again',url('',true));
 				die;
@@ -94,4 +103,47 @@ if(isset($_POST['u_login'])){
 		die;
 	}
 }
+if(isset($_GET['code'])){
+	$c=$_GET['code'];
+	$q='SELECT * FROM user WHERE token="'.$c.'"';
+	$qr=mysqli_query($con,$q);
+	if($qr){
+		if(mysqli_num_rows($qr) > 0){
+			$q1='UPDATE user SET
+			token="",
+			status="1"
+			WHERE token="'.$c.'"
+			';
+			$qr1=mysqli_query($con,$q1);
+			if($qr1){
+				msg('done','Account Active',url('',true));
+			}else{
+				echo "string3";
+			}
+		}else{
+			echo "string2";
+		}
+	}else{
+		echo "string";
+		die;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
