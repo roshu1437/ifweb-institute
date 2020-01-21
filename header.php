@@ -8,7 +8,19 @@
         <li><a href="<?=url()?>">Home</a></li>
         <li><a href="<?=url('about.php')?>">About</a></li>
         <li><a href="<?=url('contact.php')?>">contact</a></li>
-        <li><a class="waves-effect waves-light btn modal-trigger" href="#login_signup">login</a></li>
+
+        <?php if(isset($_COOKIE['login_auth'])){ 
+            $d=user_login($_COOKIE['login_auth']);
+            echo '<li>Welcome '.$d['last_name'].'</li>';
+          ?>
+
+            <li><a class="waves-effect waves-light btn" href="<?=url('actions/signup.php?logout=1')?>">Logout</a></li>
+
+        <?php }else{ ?>
+
+          <li><a class="waves-effect waves-light btn modal-trigger" href="#login_signup">login</a></li>
+          
+        <?php } ?>
         <!-- Dropdown Trigger -->
         <li>
           <form>

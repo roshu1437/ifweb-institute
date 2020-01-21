@@ -97,6 +97,10 @@ if(isset($_POST['u_login'])){
 		if($record['status']==0){
 			msg('error','Please Active Your Account First',url('',true));
 			die;
+		}else{
+			setcookie('login_auth',$record['id'],time()+60*60*24*365,'/');
+			msg('done','Login',url('',true));
+			die;
 		}
 	}else{
 		msg('error','Please Fill All The Field',url('',true));
@@ -127,6 +131,10 @@ if(isset($_GET['code'])){
 		echo "string";
 		die;
 	}
+}
+if(isset($_GET['logout'])){
+	setcookie('login_auth','',time()-10,'/');
+	msg('done','Logout',url('',true));
 }
 
 

@@ -54,4 +54,11 @@ function mail_send($from,$subject,$msg){
 	curl_close($ch);
 	return true;
 }
+function user_login($user_id){
+	$con=mysqli_connect('localhost','root','','webg');
+	$q='SELECT * FROM user WHERE id="'.$user_id.'"';
+	$qr=mysqli_query($con,$q);
+	$data=mysqli_fetch_assoc($qr);
+	return $data;
+}
 ?>
