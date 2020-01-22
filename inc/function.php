@@ -31,7 +31,7 @@ function mail_send($from,$subject,$msg){
 	    'email' => 'admin email',
 	  ),
 	  'subject' => $subject,
-	  'content' => $msg,
+	  'content' =>
 	  array(
 	    0 => 
 	    array(
