@@ -61,4 +61,19 @@ function user_login($user_id){
 	$data=mysqli_fetch_assoc($qr);
 	return $data;
 }
+function check_login($url){
+	if(!isset($_COOKIE['login_auth'])){
+		header('Location: '.$url);
+	}
+}
+function cats_get(){
+	$con=mysqli_connect('localhost','root','','webg');
+	$q='SELECT * FROM cat';
+	$qr=mysqli_query($con,$q);
+	$data=array();
+	while($d=mysqli_fetch_assoc($qr)) {
+		$data[]=$d;
+	}
+	return $data;
+}
 ?>

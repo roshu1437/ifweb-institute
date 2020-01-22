@@ -1,6 +1,6 @@
 <!-- https://www.screencast.com/t/wRku15jE -->
 <nav>
-  <div class="container">
+  <div class="container2">
     <div class="nav-wrapper">
       <a href="<?=url()?>" class="brand-logo">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -13,9 +13,8 @@
             $d=user_login($_COOKIE['login_auth']);
             echo '<li>Welcome '.$d['last_name'].'</li>';
           ?>
-
-            <li><a class="waves-effect waves-light btn" href="<?=url('actions/signup.php?logout=1')?>">Logout</a></li>
-
+            <li><a class="waves-effect waves-light" href="<?=url('actions/signup.php?logout=1')?>">Logout</a></li>
+            <li><a class="waves-effect waves-light btn" href="<?=url('productadd.php')?>">Add Product</a></li>
         <?php }else{ ?>
 
           <li><a class="waves-effect waves-light btn modal-trigger" href="#login_signup">login</a></li>
