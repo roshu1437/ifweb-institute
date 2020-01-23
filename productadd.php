@@ -13,7 +13,7 @@
 		<?php include_once('sidebar.php'); ?>
 	</div>
 	<div class="col l9">
-		<form class="col s12" action="<?=url('actions/productadd.php')?>" method="post">
+		<form class="col s12" action="<?=url('actions/productadd.php')?>" method="post" enctype="multipart/form-data">
             <blockquote>Product Add</blockquote>
             <div class="row">
               <div class="input-field col s6">
